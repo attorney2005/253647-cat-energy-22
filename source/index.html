@@ -1,12 +1,140 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  </body>
+<body class="page-body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/can.jpg" width="" height="" alt="Кот в костюме Бетмана">
+    </a>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              ГЛАВНАЯ
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              КАТАЛОГ ПРОДУКЦИИ
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              ПОДБОР ПРОГРАММЫ
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="search">
+      <h1>Функциональное питание для котов</h1>
+      <h3>ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</h3>
+      <button class="search__toggle">
+        <span>ПОДОБРАТЬ ПРОГРАММУ</span>
+      </button>
+    </section>
+    <section class="change-weight">
+      <div class="change-weight__wrapper">
+        <div class="change-weight__slim">
+          <h3>ПОХУДЕНИЕ</h3>
+          <p class="change-weight__text">
+            Ваш кот весит больше собаки и почти утратил способность<br>
+            лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            <a href="">Каталог Slim</a>
+          </p>
+        </div>
+        <div class="change-weight__progress">
+          <h3>НАБОР МАССЫ</h3>
+          <p class="change-weight__text">
+            Заработать авторитет среди дворовых котов и даже собак?<br>
+            Серия Саt Energy Pro поможет вашему коту наростить необходимые мышцы!
+            <a href="">Каталог Pro</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="work-stages">
+      <div class="work-stages__wrapper">
+        <p class="work-stages__title">Как это работает</p>
+        <ul class="work-stages__list">
+          <li class="work-stages__item">
+            <svg></svg>
+            <p>Функциональное питание поддержит только полезные питательные вещества.</p>
+          </li>
+          <li class="work-stages__item">
+            <svg></svg>
+            <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </li>
+          <li class="work-stages__item">
+            <svg></svg>
+            <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="work-stages__item">
+            <svg></svg>
+            <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="example">
+      <div class="example__wrapper">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__text"> Борис сбросил 5 кг за 2 месяца, просто завменив свой обычный корм на Cat Energy
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="example__weight">
+          <div class="example__item">
+          </div>
+          <div class="example__item">
+          </div>
+        </div>
+      </div>
+      <h3> затраты на питание: 15 000 руб.</h3>
+      <img src="img/sitting-cat.jpg" width="" height="" alt="Сидящий кот">
+      <button class="example-button">БЫЛО</button>
+      <input type="range" min="1" max="100" value="40">
+      <button class="example-button">СТАЛО</button>
+    </section>
+    <section class="contaсts">
+      <div class="contaсts__wrapper">
+        <div class="contaсts__adress">
+          <p>ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</p>
+          <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <img src="img/map.svg" class="contaсts__map" width="" height="" alt="Карта">
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__brend">
+        <p>CAT ENERGY</p>
+      </div>
+      <div class="page-footer__social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href=""></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href=""></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copy-right">
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
