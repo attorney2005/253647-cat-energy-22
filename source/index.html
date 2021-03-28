@@ -13,20 +13,21 @@
     </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button"></button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>
-              главная
+          <li class="site-list__item">
+            <a class="site-list__item--active">
+              Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
-              каталог продукции
+            <a href="catalog.html">
+              Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
-              подбор программы
+            <a href="form.html">
+              Подбор программы
             </a>
           </li>
         </ul>
@@ -35,35 +36,37 @@
   </header>
   <main class="page-main">
     <section class="offer">
-      <h1 class="offer__">Функциональное питание для котов</h1>
-      <p class="offer__">занялся собой? займись котом!</p>
-      <img class="offer__" src="img/can.jpg" width="" height="" alt="">
-      <a class="offer__toggle" href="#">подобрать программу</a>
+      <h1 class="offer__title">Функциональное питание для котов</h1>
+      <p class="offer__motto">Занялся собой? Займись котом!</p>
+      <img class="offer__chicken-food" src="img/can.jpg" width="" height="" alt="">
+      <a class="button offer__toggle" href="#">Подобрать программу</a>
     </section>
     <section class="programs">
       <div class="programs__wrapper">
-        <div class="program__slim">
-          <h3 class="program__header">похудение</h3>
+        <article class="program__progress">
+          <h3 class="program__title">Похудение</h3>
           <p class="program__description">
-            Ваш кот весит больше собаки и почти утратил способность<br>
+            Ваш кот весит больше собаки и почти утратил способность
             лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-            <a class="program__link" href="">Каталог Slim</a>
           </p>
-        </div>
-        <div class="program__progress">
-          <h3 class="program__header">набор массы</h3>
+          <p class="program__catalog-slim">Каталог Slim</p>
+          <a class="program__links" href=""></a>
+        </article>
+        <article class="program__progress">
+          <h3 class="program__header">Набор массы</h3>
           <p class="program__description">
-            Заработать авторитет среди дворовых котов и даже собак?<br>
+            Заработать авторитет среди дворовых котов и даже собак?
             Серия Саt Energy Pro поможет вашему коту наростить необходимые мышцы!
-            <a class="program__link" href="">Каталог Pro</a>
           </p>
-        </div>
+          <p class="program__catalog-pro">Каталог Pro</p>
+          <a class="program__links" href="#"></a>
+        </article>
       </div>
     </section>
     <section class="work-stages">
       <div class="work-stages__wrapper">
         <h2 class="work-stages__title">Как это работает</h2>
-        <ul class="work-stages__list">
+        <ol class="work-stages__list">
           <li class="work-stages__item">
             <svg></svg>
             <p class="work-stages__description">Функциональное питание поддержит только полезные питательные вещества.</p>
@@ -77,10 +80,9 @@
             <p class="work-stages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="work-stages__item">
-            <svg></svg>
             <p class="work-stages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
     <section class="example">
@@ -89,32 +91,34 @@
         <p class="example__text"> Борис сбросил 5 кг за 2 месяца, просто завменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="example__weight">
-          <div class="example__item">
-            <p class="example__value"></p>
-            <p class="example__subtitle"></p>
-          </div>
-          <div class="example__item">
-            <p class="example__value"></p>
-            <p class="example__subtitle"></p>
-          </div>
-          <h3 class="example__cost"> затраты на питание: 15 000 руб.</h3>
-        </div>
+        <ul class="example__weight">
+          <li><b class="example__value">5 кг</b></li>
+          <li><span class="example__subtitle">Снижение веса</span></li>
+        </ul>
+        <ul class="example__item">
+          <li><b class="example__value">60 дней</b></li>
+          <li><span class="example__subtitle">Затрачено времени</span></li>
+        </ul>
+        <strong class="example__cost"> Затраты на питание: 15 000 руб.</strong>
       </div>
       <img src="img/sitting-cat.jpg" width="" height="" alt="Сидящий толстый кот">
       <img src="" width="" height="" alt="Сидящий худой кот">
-
-      <button class="example__button" type="button">было</button>
-      <label>
-        <input class="example__slide" type="range" min="1" max="100" value="40">
-      </label>
-      <button class="example__button" type="button">стало</button>
+      <div>
+        <button class="example__button" type="button">Было</button>
+        <div class="example__range-control">
+          <div class="example__scale">
+            <div class="example__bar"></div>
+            <button type="button" class="example__button--toggle"></button>
+          </div>
+        </div>
+        <button class="example__button" type="button">Стало</button>
+      </div>
     </section>
     <section class="contaсts">
       <div class="contaсts__wrapper">
         <div class="contaсts__address">
-          <h2 class="contaсts__address-title">приглашаем<br> к сотудничеству дилеров!</h2>
-          <p class="contaсts__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <b class="contaсts__address-title">Приглашаем к сотудничеству дилеров!</b>
+          <address class="contaсts__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <img src="img/map.svg" class="contaсts__map" width="" height="" alt="Карта">
       </div>
@@ -123,24 +127,30 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__brend">
-        <img class="" src="#" width="" height="" alt="">
+        <a><img class="" src="#" width="" height="" alt=""></a>
       </div>
-      <div class="page-footer__social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
-          </li>
-        </ul>
-      </div>
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
+            <svg></svg>
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy">
+            <svg></svg>
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">
+            <svg></svg>
+          </a>
+        </li>
+      </ul>
       <div class="page-footer__copyright">
-        <svg></svg>
-        <svg></svg>
+        <a>
+          <p>HTML Academy</p>
+          <svg></svg>
+        </a>
       </div>
     </div>
   </footer>
