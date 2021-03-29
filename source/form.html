@@ -34,6 +34,7 @@
       </div>
     </nav>
   </header>
+
   <main class="page-main">
     <form>
       <fieldset>
@@ -41,15 +42,15 @@
         <ul>
           <li>
             <label>Имя:*</label>
-            <input>
+            <input type="name" value="Барсик">
           </li>
           <li>
             <label>Вес(кг):*</label>
-            <input>
+            <input type="number" value="7">
           </li>
           <li>
-            <label>Возраст(Лет):*</label>
-            <input>
+            <label>Возраст(лет):*</label>
+            <input type="number" value="7">
           </li>
         </ul>
       </fieldset>
@@ -74,20 +75,20 @@
         <legend>Дополнительно</legend>
         <ul>
           <li>
-            <label>Сахарозаменитель</label>
-            <input>
+            <label for="sugar">Сахарозаменитель</label>
+            <input type="checkbox" name="sugar" id="sugar" checked>
           </li>
           <li>
-            <label>Питьевая вода</label>
-            <input>
+            <label for="water" >Питьевая вода</label>
+            <input type="checkbox" name="water" id="water">
           </li>
           <li>
-            <label>Молоко</label>
-            <input>
+            <label for="milk" >Молоко</label>
+            <input type="checkbox" name="milk" id="milk">
           </li>
           <li>
-            <label>Витамины</label>
-            <input>
+            <label for="vitamin">Витамины</label>
+            <input type="checkbox" name="vitamin" id="vitamin">
           </li>
         </ul>
         <button class="button" type="submit">Отправить заявку</button>
