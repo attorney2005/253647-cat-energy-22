@@ -40,7 +40,7 @@
     <h1>Подбор программы</h1>
     <form class="form" action=' https://echo.htmlacademy.ru' method='POST'>
       <p class="form__header">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <fieldset class="form-state">
+      <fieldset class="form__state">
         <label class="form__data">
           <span class="form__text">Имя:<sub>*</sub></span>
           <input class="form__value" type="text" placeholder="Барсик" required>
@@ -55,17 +55,17 @@
         </label>
       </fieldset>
       <fieldset class="form__radio">
-        <label class="form__data">
+        <label class="form__radio-data">
           <span class="form__text">Похудение</span>
-          <input class="form__value" type="radio" name="program-slim" value="Slim" checked>
+          <input class="form__radio-value" type="radio" name="program-slim" value="Slim" checked>
         </label>
-        <label class="form__data">
+        <label class="form__radio-data">
           <span class="form__text">Набор массы</span>
-          <input class="form__value" type="radio" name="program-fat" value="Fat">
+          <input class="form__radio-value" type="radio" name="program-fat" value="Fat">
         </label>
-        <label class="form__data">
+        <label class="form__radio-data">
           <span class="form__text">Не знаю (Нужен ваш совет)</span>
-          <input class="form__value" type="radio" name="program-unknown" value="unknown">
+          <input class="form__radio-value" type="radio" name="program-unknown" value="unknown">
         </label>
       </fieldset>
       <fieldset class="form__owner">
@@ -85,20 +85,20 @@
       </fieldset>
       <fieldset class="form__additional">
         <legend class="form__title">Дополнительно</legend>
-        <label class="form__data">
-          <input class="form__value" type="checkbox" name="sugar" checked>
+        <label class="form__additional-data">
+          <input class="form__additional-value" type="checkbox" name="sugar" checked>
           <span class="form__text">Сахарозаменитель</span>
         </label>
-        <label class="form__data">
-          <input class="form__value" type="checkbox" name="water">
+        <label class="form__additional-data">
+          <input class="form__additional-value" type="checkbox" name="water">
           <span class="form__text">Питьевая вода</span>
         </label>
-        <label class="form__data">
-          <input class="form__value" type="checkbox" name="milk">
+        <label class="form__additional-data">
+          <input class="form__additional-value" type="checkbox" name="milk">
           <span class="form__text">Молоко</span>
         </label>
-        <label class="form__data">
-          <input class="form__value" type="checkbox" name="vitamin">
+        <label class="form__additional-data">
+          <input class="form__additional-value" type="checkbox" name="vitamin">
           <span class="form__text">Витамины</span>
         </label>
       </fieldset>
