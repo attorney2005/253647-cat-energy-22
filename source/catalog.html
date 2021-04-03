@@ -1,192 +1,306 @@
-<header class="page-header">
-  <a class="page-header__logo">
-    <img src="" width="" height="" alt="Кот в костюме Бетмана">
-  </a>
-  <nav class="main-nav">
-    <div class="main-nav__wrapper">
-      <button class="main-nav__toggle" type="button"></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__item--active">
-            Главная
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__picture" src="" width="" height="" alt="Кот в костюме Бетмана">
+    </a>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button"></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="catalog__wrapper container">
+      <h1 class="page-main__title">Каталог продукции</h1>
+      <h2 class="visually-hidden">Основной каталог</h2>
+      <article class="catalog__card">
+        <h2 class="title">
+          <a class="catalog__link" href="">Cat Energy Slim 500 Г</a>
+        </h2>
+        <a class="catalog__link" href="">
+          <img src="" width="" height="" alt="Банка Cat Energy гречка 500 г">
+        </a>
+        <table class="catalog__list">
+          <tr>
+            <td class="catalog__item-key">Масса</td>
+            <td class="catalog__item-definition">500 г</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Вкус</td>
+            <td class="catalog__item-definition">Курица</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Цена</td>
+            <td class="catalog__item-definition">700 Р.</td>
+          </tr>
+        </table>
+        <a class="button" href="">Заказать</a>
+      </article>
+
+      <article class="catalog__card">
+        <h2 class="title">
+          <a class="catalog__link" href="">Cat Energy Slim 500 Г</a>
+        </h2>
+        <a class="catalog__link" href="">
+          <img src="" width="" height="" alt="Банка Cat Energy гречка 500 г">
+        </a>
+        <table class="catalog__list">
+          <tr>
+            <td class="catalog__item-key">Масса</td>
+            <td class="catalog__item-definition">1000 г</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Вкус</td>
+            <td class="catalog__item-definition">Курица</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Цена</td>
+            <td class="catalog__item-definition">1000 Р.</td>
+          </tr>
+        </table>
+        <a class="button" href="">Заказать</a>
+      </article>
+
+      <article class="catalog__card">
+        <h2 class="title">
+          <a class="catalog__link" href="">Cat Energy Slim 500 Г</a>
+        </h2>
+        <a class="catalog__link" href="">
+          <img src="" width="" height="" alt="Банка Cat Energy гречка 500 г">
+        </a>
+        <table class="catalog__list">
+          <tr>
+            <td class="catalog__item-key">Масса</td>
+            <td class="catalog__item-definition">500 г</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Вкус</td>
+            <td class="catalog__item-definition">Рыба</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Цена</td>
+            <td class="catalog__item-definition">700 Р.</td>
+          </tr>
+        </table>
+        <a class="button" href="">Заказать</a>
+      </article>
+
+      <article class="catalog__card">
+        <h2 class="title">
+          <a class="catalog__link" href="">Cat Energy Slim 500 Г</a>
+        </h2>
+        <a class="catalog__link" href="">
+          <img src="" width="" height="" alt="Банка Cat Energy гречка 500 г">
+        </a>
+        <table class="catalog__list">
+          <tr>
+            <td class="catalog__item-key">Масса</td>
+            <td class="catalog__item-definition">1000 г</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Вкус</td>
+            <td class="catalog__item-definition">Рыба</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Цена</td>
+            <td class="catalog__item-definition">1000 Р.</td>
+          </tr>
+        </table>
+        <a class="button" href="">Заказать</a>
+      </article>
+      <article class="catalog__card">
+        <h2 class="title">
+          <a class="catalog__link" href="">Cat Energy Slim 500 Г</a>
+        </h2>
+        <a class="catalog__link" href="">
+          <img src="" width="" height="" alt="Банка Cat Energy гречка 500 г">
+        </a>
+        <table class="catalog__list">
+          <tr>
+            <td class="catalog__item-key">Масса</td>
+            <td class="catalog__item-definition">500 г</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Вкус</td>
+            <td class="catalog__item-definition">Гречка</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Цена</td>
+            <td class="catalog__item-definition">400 Р.</td>
+          </tr>
+        </table>
+        <a class="button" href="">Заказать</a>
+      </article>
+      <article class="catalog__card">
+        <h2 class="title">
+          <a class="catalog__link" href="">Cat Energy Slim 500 Г</a>
+        </h2>
+        <a class="catalog__link" href="">
+          <img src="" width="" height="" alt="Банка Cat Energy гречка 500 г">
+        </a>
+        <table class="catalog__list">
+          <tr>
+            <td class="catalog__item-key">Масса</td>
+            <td class="catalog__item-definition">100 г</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Вкус</td>
+            <td class="catalog__item-definition">Гречка</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Цена</td>
+            <td class="catalog__item-definition">700 Р.</td>
+          </tr>
+        </table>
+        <a class="button" href="">Заказать</a>
+      </article>
+      <article class="catalog__card">
+        <h2 class="title">
+          <a class="catalog__link" href="">Cat Energy Slim 500 Г</a>
+        </h2>
+        <a class="catalog__link" href="">
+          <img src="" width="" height="" alt="Банка Cat Energy гречка 500 г">
+        </a>
+        <table class="catalog__list">
+          <tr>
+            <td class="catalog__item-key">Масса</td>
+            <td class="catalog__item-definition">500 г</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Вкус</td>
+            <td class="catalog__item-definition">Рис</td>
+          </tr>
+          <tr>
+            <td class="catalog__item-key">Цена</td>
+            <td class="catalog__item-definition">500 Р.</td>
+          </tr>
+        </table>
+        <a class="button" href="">Заказать</a>
+      </article>
+      <article class="catalog__card catalog__card--everything">
+        <p>&#10011</p>
+        <h2 class="title">
+          <a class="catalog__link catalog__link--everything" href="">Показать еще 100500 товаров</a>
+        </h2>
+        <p>На самом деле вкусов гораздо больше!</p>
+        <a class="button" href="">Показать все</a>
+      </article>
+    </section>
+
+    <section class="catalog-additional__wrapper container">
+      <h2>Дополнительные товары</h2>
+      <article class="catalog-additional__card">
+        <h3 class="catalog-additional__title">Сахарозаменитель</h3>
+        <table class="catalog-additional__list">
+          <tr>
+            <td class="catalog-additional__item-key">1 упаковка (100 г)</td>
+            <td class="catalog-additional__item-definition">200 Р.</td>
+          </tr>
+        </table>
+        <a class="button" href="">Заказать</a>
+      </article>
+
+      <article class="catalog-additional__card">
+        <h3 class="catalog-additional__title">Питьевая вода</h3>
+        <table class="catalog-additional__list">
+          <tr>
+            <td class="catalog-additional__item-key">5 литров</td>
+            <td class="catalog-additional__item-definition">50 Р.</td>
+          </tr>
+        </table>
+        <a class="button" href="">Заказать</a>
+      </article>
+      <article class="catalog-additional__card">
+        <h3 class="catalog-additional__title">Молоко</h3>
+        <table class="catalog-additional__list">
+          <tr>
+            <td class="catalog-additional__item-key">1 литр</td>
+            <td class="catalog-additional__item-definition">100 Р.</td>
+          </tr>
+        </table>
+        <a class="button" href="">Заказать</a>
+      </article>
+      <article class="catalog-additional__card">
+        <h3 class="catalog-additional__title">Витамины</h3>
+        <table class="catalog__list">
+          <tr>
+            <td class="catalog-additional__item-key">1 упаковка (30 г)</td>
+            <td class="catalog-additional__item-definition">300 Р.</td>
+          </tr>
+        </table>
+          <a class="button" href="">Заказать</a>
+      </article>
+      <article class="additional__block">
+        <h3 class="additional__text">Закажите все и получите чехол в подарок</h3>
+      </article>
+    </section>
+
+
+    <section class="contaсts__wrapper container">
+      <div class="contaсts__wrapper">
+        <div class="contaсts__address">
+          <b class="contaсts__address-title">Приглашаем к сотудничеству дилеров!</b>
+          <address class="contaсts__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <img src="img/map.svg" class="contaсts__map" width="" height="" alt="Карта">
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__brend">
+        <a><img class="" src="#" width="" height="" alt=""></a>
+      </div>
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
+            <svg></svg>
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="catalog.html">
-            Каталог продукции
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy">
+            <svg></svg>
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="form.html">
-            Подбор программы
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">
+            <svg></svg>
           </a>
         </li>
       </ul>
-    </div>
-  </nav>
-</header>
-<main class="page-main">
-  <h1 class="page-main-title">Каталог продукции</h1>
-  <section clas="">
-    <a href="">
-      <p class="title">Cat Energy Pro 500 Г</p>
-      <img src="" width="" height="" alt="Банка Cat Energy Pro курица 500 г">
-    </a>
-    <ul>
-      <li>Масса</li>
-      <li>Вкус</li>
-      <li>Цена</li>
-      <li>500 г</li>
-      <li>Курица</li>
-      <li>700 Р.</li>
-    </ul>
-    <button type="button">Заказать</button>
-  </section>
-
-  <section>
-    <a href="">
-      <p class="title">Cat Energy Pro 1000 Г</p>
-      <img src="" width="" height="" alt="Банка Cat Energy Pro курица 1000 г">
-    </a>
-    <ul>
-      <li>Масса</li>
-      <li>Вкус</li>
-      <li>Цена</li>
-      <li>1000 г</li>
-      <li>Курица</li>
-      <li>1000 Р.</li>
-    </ul>
-    <button type="button">Заказать</button>
-  </section>
-
-  <section>
-    <a href="">
-      <p class="title">Cat Energy Pro 500 Г</p>
-      <img src="" width="" height="" alt="Банка Cat Energy Pro рыба 500 г">
-    </a>
-    <ul>
-      <li>Масса</li>
-      <li>Вкус</li>
-      <li>Цена</li>
-      <li>500 г</li>
-      <li>Рыба</li>
-      <li>700 Р.</li>
-    </ul>
-    <button type="button">Заказать</button>
-  </section>
-
-  <section>
-    <a href="">
-      <p class="title">Cat Energy Pro 1000 Г</p>
-      <img src="" width="" height="" alt="Банка Cat Energy Pro рыба 1000 г">
-    </a>
-    <ul>
-      <li>Масса</li>
-      <li>Вкус</li>
-      <li>Цена</li>
-      <li>1000 г</li>
-      <li>Рыба</li>
-      <li>1000 Р.</li>
-    </ul>
-    <button type="button">Заказать</button>
-  </section>
-
-  <section>
-    <a href="">
-      <p class="title">Cat Energy Slim 500 Г</p>
-      <img src="" width="" height="" alt="Банка Cat Energy гречка 500 г">
-    </a>
-    <ul>
-      <li>Масса</li>
-      <li>Вкус</li>
-      <li>Цена</li>
-      <li>500 г</li>
-      <li>Гречка</li>
-      <li>400 Р.</li>
-    </ul>
-    <button type="button">Заказать</button>
-  </section>
-
-  <section>
-    <a href="">
-      <p class="title">Cat Energy Slim 1000 Г</p>
-      <img src="" width="" height="" alt="Банка Cat Energy гречка 1000 г">
-    </a>
-    <ul>
-      <li>Масса</li>
-      <li>Вкус</li>
-      <li>Цена</li>
-      <li>100 г</li>
-      <li>Гречка</li>
-      <li>700 Р.</li>
-    </ul>
-    <button type="button">Заказать</button>
-  </section>
-  <section>
-    <a href="">
-      <p class="title">Cat Energy Slim 500 Г</p>
-      <img src="" width="" height="" alt="Банка Cat Energy рис 500 г">
-    </a>
-    <ul>
-      <li>Масса</li>
-      <li>Вкус</li>
-      <li>Цена</li>
-      <li>500 г</li>
-      <li>Рис</li>
-      <li>500 Р.</li>
-    </ul>
-    <button type="button">Заказать</button>
-  </section>
-  <section>
-
-  </section>
-  <section>
-    <h2>Дополнительные товары</h2>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </section>
-
-  <section class="contaсts">
-    <div class="contaсts__wrapper">
-      <div class="contaсts__address">
-        <b class="contaсts__address-title">Приглашаем к сотудничеству дилеров!</b>
-        <address class="contaсts__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link">
+          <p class="page-footer__copyright-text">HTML Academy</p>
+          <svg></svg>
+        </a>
       </div>
-      <img src="img/map.svg" class="contaсts__map" width="" height="" alt="Карта">
     </div>
-  </section>
-</main>
-<footer class="page-footer">
-  <div class="page-footer__wrapper">
-    <div class="page-footer__brend">
-      <a><img class="" src="#" width="" height="" alt=""></a>
-    </div>
-    <ul class="page-footer__social-list">
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
-          <svg></svg>
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy">
-          <svg></svg>
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">
-          <svg></svg>
-        </a>
-      </li>
-    </ul>
-    <div class="page-footer__copyright">
-      <a class="page-footer__copyright-link">
-        <p class="page-footer__copyright-text">HTML Academy</p>
-        <svg></svg>
-      </a>
-    </div>
-  </div>
-</footer>
+  </footer>
+</body>
+
+</html>
