@@ -1,33 +1,31 @@
 .example {
-  padding-left: 20px;
+  padding: 20px 20px;
   background-color: #EAEAEA;;
 }
 
-.example__wrapper {
-  padding: 30px 20px 0 20px;
-}
-
 .example__title {
-  margin: 27px 0 0 0;
-  height: 70px;
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 }
 
 .example__text {
   margin: 33px 0 0 0;
-font-family: "Arial", sans-serif;
-font-size: 14px;
-line-height: 18px;
-font-weight: 400;
-font-style: normal;
-color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #444444;
 }
 
 .example__weight {
-display: flex;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .example__weight-item {
@@ -35,10 +33,10 @@ display: flex;
   width: 124px;
   height: 64px;
   display: flex;
+  list-style-type: none;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  align-items: center;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 
@@ -46,7 +44,8 @@ display: flex;
     margin-left: 30px;
 
   }
-  &-value {
+}
+  .example__value {
     display: block;
     font-size: 24px;
     line-height: 24px;
@@ -54,19 +53,19 @@ display: flex;
     margin-top: 17px;
   }
 
-  &-label {
-    margin-top: 15px;
-    width: 80px;
-    text-align: center;
-    font-family: "Arial", sans-serif;
+  .example__subtitle {
+    margin-top: 10px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
     font-size: 12px;
     line-height: 12px;
-    color: #444444;
-    text-transform: lowercase;
-  }
-}
+    text-align: center;
+      }
+
 
 .example__cost {
+  display: block;
   margin-top: 15px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -75,7 +74,9 @@ display: flex;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+}
+.example__picture {
+margin-top: 30px;
 }
 
 .example__slider {
