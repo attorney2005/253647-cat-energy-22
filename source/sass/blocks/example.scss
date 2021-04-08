@@ -1,0 +1,127 @@
+.example {
+  padding-left: 20px;
+  background-color: #EAEAEA;;
+}
+
+.example__wrapper {
+  padding: 30px 20px 0 20px;
+}
+
+.example__title {
+  margin: 27px 0 0 0;
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 70px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.example__text {
+  margin: 33px 0 0 0;
+font-family: "Arial", sans-serif;
+font-size: 14px;
+line-height: 18px;
+font-weight: 400;
+font-style: normal;
+color: #444444;
+}
+
+.example__weight {
+display: flex;
+}
+
+.example__weight-item {
+  margin: 0;
+  width: 124px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  &:not(:first-of-type) {
+    margin-left: 30px;
+
+  }
+  &-value {
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 17px;
+  }
+
+  &-label {
+    margin-top: 15px;
+    width: 80px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444444;
+    text-transform: lowercase;
+  }
+}
+
+.example__cost {
+  margin-top: 15px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__slider {
+  margin: 25px 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: 400;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  border: none;
+}
+
+.example__scale {
+  display: block;
+  width: 84px;
+  height: 14px;
+  border: 1px solid #CDCDCD;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: #FFFFFF;
+}
+
+.example__bar {
+  width: 35px;
+  height: 6px;
+  left: 125px;
+  top: 2421px;
+  background: #68B738;
+  border-radius: 6px;
+}
+
+.example__button--toggle {
+
+}
