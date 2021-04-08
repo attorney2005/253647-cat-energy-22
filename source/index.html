@@ -12,16 +12,20 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__picture" src="img/logo-mobile.png" width="" height="" alt="Кот в костюме Бетмана">
+      <a class="page-header__logo-link" href="#">
+        <picture class="page-header__logo">
+          <source media="(min-width: 1150px)" srcset="img/logos/image/desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logos/image/tablet.svg">
+          <img src="#" alt="Кэт энерджи">
+        </picture>
       </a>
-      <a class="page-header__logo-text" href="#">
-        <img class="page-header__picture-text" src="img/footer-logo.png" width="" height="" alt="Cat Energy">
+      <a class="page-header__name-link" href="#">
+        <img class="page-header__name" src="img/footer-logo.png" width="" height="" alt="Cat Energy">
       </a>
+      <button class="main-nav__toggle" type="button"></button>
     </div>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
-        <button class="main-nav__toggle" type="button"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--active">
@@ -53,24 +57,22 @@
     <section class="programs">
       <div class="programs__wrapper">
         <article class="programs__progress">
-          <img src="img/cat_back.png" width="" height="" alt="">
-          <h3 class="programs__title">Похудение</h3>
+          <h3 class="programs__title programs__title--slim">Похудение</h3>
           <p class="programs__description">
             Ваш кот весит больше собаки и почти утратил способность
             лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="programs__links" href="#">
+          <a class="programs__link" href="#">
             Каталог Slim
           </a>
         </article>
         <article class="programs__progress">
-          <img src="img/cat_back (1).png" width="" height="" alt="">
-          <h3 class="programs__title">Набор массы</h3>
+          <h3 class="programs__title programs__title--pro">Набор массы</h3>
           <p class="programs__description">
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Саt Energy Pro поможет вашему коту наростить необходимые мышцы!
           </p>
-          <a class="programs__links" href="#">
+          <a class="programs__link" href="#">
             Каталог Pro
           </a>
         </article>

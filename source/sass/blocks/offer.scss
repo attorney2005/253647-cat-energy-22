@@ -3,7 +3,7 @@
   padding: 51px 20px 0 20px;
 }
 
- .offer__background {
+.offer__background {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,19 +19,19 @@
 .offer__title {
   margin: 0;
   text-align: center;
-  font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
 }
 
 .offer__subtitle {
-  margin: 54px 0 0 0;
+  margin: 25px 0 0 0;
   text-align: center;
   font-size: 14px;
   line-height: 14px;
-  font-weight: normal;
+  font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
@@ -47,4 +47,6 @@
 .offer__button {
   display: block;
   margin: 3px auto 0 auto;
+  background-color: #68b738;
+  color: #ffffff;
 }

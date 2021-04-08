@@ -1,8 +1,6 @@
 .page-header {
   margin: 0 auto;
   padding: 0;
-  background-color: #e5e5e5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .page-header__wrapper {
@@ -15,27 +13,29 @@
 
 }
 
+.page-header__logo-link{
+display: block;
+}
+
 .page-header__logo {
-
+display: block;
 }
-
-.page-header__logo-text {
-
-}
-
-.page-header__picture {
+.page-header__name-link {
   display: block;
 }
 
-.page-header__picture-text {
+.page-header__name {
   display: block;
 }
 
 .main-nav {
-  background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__wrapper {
+  margin: 0;
+  padding: 0;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -49,6 +49,8 @@
 }
 
 .main-nav__list {
+  margin-left: 0;
+  padding-left: 0;
 
 }
 
@@ -57,7 +59,7 @@
   text-align: center;
   text-decoration: none;
   list-style: none;
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
