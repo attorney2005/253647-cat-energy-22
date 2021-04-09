@@ -1,19 +1,12 @@
 .programs {
-padding: 20px 20px 0 20px;
-}
-
-
-
-
-.programs__wrapper {
-
+  padding: 20px 20px 0 20px;
 }
 
 .programs__progress {
   padding: 20px;
   background-color: #f2f2f2;
 
-  &:not(:first-of-type){
+  &:not(:first-of-type) {
     margin-top: 20px;
   }
 }
@@ -29,11 +22,13 @@ padding: 20px 20px 0 20px;
   line-height: 37px;
   text-transform: uppercase;
   color: #000000;
+
   &--slim {
-  background-image: url("../img/cat_back.png");
-}
+    background-image: url("../img/cat_back.png");
+  }
+
   &--pro {
-  background-image: url("#");
+    background-image: url("#");
   }
 }
 

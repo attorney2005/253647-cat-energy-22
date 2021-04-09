@@ -1,3 +1,13 @@
+.page-footer {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.page-footer__wrapper {
+  padding: 20px;
+}
+
 .page-footer__social-list {
   padding-left: 0;
   margin-left: 0;
@@ -5,4 +15,25 @@
 
 .page-footer__social-item {
   list-style-type: none;
+
+  &--vk {
+    background-image: url("#");
+  }
+
+  &--in {
+    background-image: url("#");
+  }
+
+  &--fb {
+    background-image: url("#");
+  }
+}
+
+.page-footer__copyright-link {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
 }

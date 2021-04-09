@@ -7,19 +7,19 @@
   height: 66px;
   margin: 0 auto;
   padding: 0 20px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
-.page-header__logo-link{
-display: block;
+.page-header__logo-link {
+  display: block;
 }
 
 .page-header__logo {
-display: block;
+  display: block;
 }
+
 .page-header__name-link {
   display: block;
 }
@@ -51,7 +51,6 @@ display: block;
 .main-nav__list {
   margin-left: 0;
   padding-left: 0;
-
 }
 
 .site-list__item {
@@ -65,7 +64,6 @@ display: block;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-
 }
 
 .site-list__item:not(:first-of-type) {
@@ -81,9 +79,11 @@ display: block;
   text-transform: uppercase;
   color: #000000;
 }
+
 .site-list__link:hover {
   color: #666666;
 }
+
 .site-list__link:active {
   color: #b3b3b3;
 }

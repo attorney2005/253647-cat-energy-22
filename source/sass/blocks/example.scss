@@ -1,6 +1,6 @@
 .example {
   padding: 20px 20px;
-  background-color: #EAEAEA;;
+  background-color: #eaeaea;
 }
 
 .example__title {
@@ -42,26 +42,26 @@
 
   &:not(:first-of-type) {
     margin-left: 30px;
-
   }
 }
-  .example__value {
-    display: block;
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-top: 17px;
-  }
 
-  .example__subtitle {
-    margin-top: 10px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 12px;
-    text-align: center;
-      }
+.example__value {
+  display: block;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 17px;
+}
+
+.example__subtitle {
+  margin-top: 10px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
 
 
 .example__cost {
@@ -75,8 +75,9 @@
   text-align: center;
   text-transform: uppercase;
 }
+
 .example__picture {
-margin-top: 30px;
+  margin-top: 30px;
 }
 
 .example__slider {
@@ -89,8 +90,8 @@ margin-top: 30px;
 
 .example__button {
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: 400;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   align-items: center;
@@ -104,10 +105,10 @@ margin-top: 30px;
   display: block;
   width: 84px;
   height: 14px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   box-sizing: border-box;
   border-radius: 6px;
-  background: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .example__bar {
@@ -115,10 +116,6 @@ margin-top: 30px;
   height: 6px;
   left: 125px;
   top: 2421px;
-  background: #68B738;
+  background-color: #68b738;
   border-radius: 6px;
-}
-
-.example__button--toggle {
-
 }
