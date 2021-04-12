@@ -3,7 +3,7 @@
 }
 
 .offer-wrapper {
-  padding: 51px 0;
+  padding: 51px 20px;
 }
 
 .offer::before {
@@ -27,7 +27,7 @@
   line-height: 36px;
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
-  color: #ffffff;
+  color: $basic-white;
 }
 
 .offer__subtitle {
@@ -36,7 +36,7 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  color: #ffffff;
+  color: $basic-white;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
 }
@@ -53,5 +53,5 @@
   margin: 3px auto 0;
   padding: 7px 20px;
   background-color: #68b738;
-  color: #ffffff;
+  color: $basic-white;
 }

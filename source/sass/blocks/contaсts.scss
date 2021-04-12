@@ -11,15 +11,14 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #111111;
+  color: $special-black;
 }
 
 .contaсts__address-text {
   margin: 0;
   font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $more-dark-grey;
 }

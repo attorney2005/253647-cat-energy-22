@@ -9,12 +9,11 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $basic-black;
 }
 
 .work-stages__list {
-  padding-left: 0;
-  margin-left: 0;
+  @include reset-list;
 }
 
 .work-stages__item {
@@ -48,5 +47,5 @@
   line-height: 18px;
   font-weight: 400;
   font-style: normal;
-  color: #444444;
+  color: $more-dark-grey;
 }

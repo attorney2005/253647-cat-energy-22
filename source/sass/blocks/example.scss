@@ -1,5 +1,5 @@
 .example {
-  background-color: #eaeaea;
+  background-color: $dark-grey2;
 }
 
 .example__wrapper {
@@ -13,7 +13,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $basic-black;
 }
 
 .example__text {
@@ -23,12 +23,11 @@
   line-height: 18px;
   font-weight: 400;
   font-style: normal;
-  color: #444444;
+  color: $more-dark-grey;
 }
 
 .example__weight {
-  padding: 0;
-  margin: 0;
+  @include reset-list;
   display: flex;
 }
 
@@ -37,7 +36,7 @@
   width: 124px;
   list-style-type: none;
   text-align: center;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $special-light-grey3;
   border-radius: 3px;
 
   &:not(:first-of-type) {
@@ -46,18 +45,19 @@
 }
 
 .example__value {
+  margin-top: 17px;
   display: block;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
-  margin-top: 17px;
 }
 
 .example__subtitle {
   margin-top: 10px;
   font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
@@ -68,8 +68,7 @@
   display: block;
   margin-top: 15px;
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -90,14 +89,13 @@
 
 .example__button {
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $basic-black;
   border: none;
 }
 
@@ -106,10 +104,10 @@
   display: block;
   width: 84px;
   height: 14px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $special-light-grey3;
   box-sizing: border-box;
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: $basic-white;
 }
 
 .example__bar {
