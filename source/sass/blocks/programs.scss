@@ -3,6 +3,7 @@
 }
 
 .programs__progress {
+  position: relative;
   padding: 20px;
   background-color: #f2f2f2;
 
@@ -11,11 +12,30 @@
   }
 }
 
+.programs__progress--slim::before {
+  position: absolute;
+  content: "";
+  top: 24;
+  left: 22px;
+  width: 53px;
+  height: 53px;
+  background-image: url("../../img/programs/cat-back-sit.png");
+}
+
+.programs__progress--pro::before {
+  position: absolute;
+  content: "";
+  left: 22px;
+  top: 24;
+  width: 67px;
+  height: 53px;
+  background-image: url("../../img/programs/cat-back-run.png");
+}
+
 .programs__title {
   padding-left: 81px;
   background-repeat: no-repeat;
   background-position: left top;
-  height: 70px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-size: 24px;
@@ -43,7 +63,7 @@
 
 .programs__link {
   display: block;
-  margin: 19px 0 0 0;
+  margin-top: 19px;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;

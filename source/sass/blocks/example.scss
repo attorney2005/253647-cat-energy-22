@@ -1,6 +1,9 @@
 .example {
-  padding: 20px 20px;
   background-color: #eaeaea;
+}
+
+.example__wrapper {
+  padding: 20px;
 }
 
 .example__title {
@@ -10,6 +13,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  color: #000000;
 }
 
 .example__text {
@@ -31,11 +35,7 @@
 .example__weight-item {
   margin: 0;
   width: 124px;
-  height: 64px;
-  display: flex;
   list-style-type: none;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
@@ -102,6 +102,7 @@
 }
 
 .example__scale {
+  position: relative;
   display: block;
   width: 84px;
   height: 14px;
@@ -112,10 +113,11 @@
 }
 
 .example__bar {
+  position: absolute;
   width: 35px;
   height: 6px;
-  left: 125px;
-  top: 2421px;
+  left: 3px;
+  top:3px;
   background-color: #68b738;
   border-radius: 6px;
 }
