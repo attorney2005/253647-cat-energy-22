@@ -8,6 +8,8 @@ background-color: $basic-grey;
 
 .footer__social-list {
   @include reset-list;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer__social-item {
