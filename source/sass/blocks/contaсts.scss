@@ -1,3 +1,7 @@
+.contaсts__wrapper {
+  position: relative;
+}
+
 .contaсts__address {
   display: flex;
   padding: 20px;
@@ -21,4 +25,11 @@
   font-size: 14px;
   line-height: 20px;
   color: $more-dark-grey;
+}
+
+.contacts__place {
+  position: absolute;
+  top: 240px;
+  left: 131px;
+
 }

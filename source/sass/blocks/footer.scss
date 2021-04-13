@@ -1,15 +1,25 @@
 .footer {
-background-color: $basic-grey;
+  background-color: $basic-grey;
 }
 
 .footer__wrapper {
   padding: 20px;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.page-footer__brand-picture{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
 }
 
 .footer__social-list {
   @include reset-list;
   display: flex;
   justify-content: space-around;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
 }
 
 .footer__social-item {
@@ -17,8 +27,17 @@ background-color: $basic-grey;
 }
 
 .footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
   font-family: "Arial", sans-serif;
-  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $more-dark-grey;
+}
+
+.footer__copyright-text {
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
