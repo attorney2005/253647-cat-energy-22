@@ -44,14 +44,6 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $basic-black;
-
-  &--slim {
-    background-image: url("../img/cat_back.png");
-  }
-
-  &--pro {
-    background-image: url("#");
-  }
 }
 
 .programms__programm-description {
@@ -73,4 +65,16 @@
   font-style: normal;
   color: $basic-black;
   text-transform: uppercase;
+  border-top: 1px solid #d9d9d9;
+}
+
+.programms__programm-link::before {
+  position: absolute;
+  content: "";
+  top: 198px;
+  left: 116px;
+  width: 53px;
+  height: 53px;
+  background-image: url("../img/programs/icon-arrow.svg");
+  background-repeat: no-repeat;
 }
