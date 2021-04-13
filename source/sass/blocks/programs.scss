@@ -1,8 +1,8 @@
-.programs {
+.programms {
   padding: 20px 20px 0 20px;
 }
 
-.programs__progress {
+.programms__programm {
   position: relative;
   padding: 20px;
   background-color: $basic-grey;
@@ -12,7 +12,7 @@
   }
 }
 
-.programs__progress--slim::before {
+.programms__programm--slim::before {
   position: absolute;
   content: "";
   top: 24;
@@ -22,7 +22,7 @@
   background-image: url("../../img/programs/cat-back-sit.png");
 }
 
-.programs__progress--pro::before {
+.programms__programm--pro::before {
   position: absolute;
   content: "";
   left: 22px;
@@ -32,7 +32,7 @@
   background-image: url("../../img/programs/cat-back-run.png");
 }
 
-.programs__title {
+.programms__programm-title {
   padding-left: 81px;
   background-repeat: no-repeat;
   background-position: left top;
@@ -52,7 +52,7 @@
   }
 }
 
-.programs__description {
+.programms__programm-description {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -61,7 +61,7 @@
   color: $more-dark-grey;
 }
 
-.programs__link {
+.programms__programm-link {
   display: block;
   margin-top: 19px;
   font-family: "Oswald", "Arial", sans-serif;
