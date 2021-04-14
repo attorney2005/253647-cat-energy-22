@@ -1,7 +1,8 @@
 .button {
-  border: none;
+  @include reset-button;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  background-color:#68B738;;
 }
