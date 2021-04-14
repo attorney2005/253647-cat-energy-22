@@ -9,20 +9,29 @@
 <body class="body">
   <div class="container">
     <header class="header">
-      <a class="header__logo">
-        <img class="page-header__picture" src="" width="" height="" alt="Кот в костюме Бетмана">
-      </a>
+      <div class="header__wrapper">
+        <a class="header__logo-link">
+          <picture class="header__logo">
+            <source media="(min-width: 1150px)" srcset="img/heder/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/heder/logo-tablet.svg">
+            <img src="img/heder/logo-mobile.svg" alt="Кэт энерджи">
+          </picture>
+        </a>
+        <a class="header__name-link" href="#">
+          <img class="header__name" src="img/heder/logo-mobile-text.svg" width="" height="" alt="Cat Energy">
+        </a>
+        <button class="main-nav__toggle" type="button"></button>
+      </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button"></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
+              <a class="site-list__link site-list__link--active">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--active">
+              <a class="site-list__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
@@ -256,27 +265,27 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="footer__brand-link" href="#"><img class="page-footer__brand-picture" src="../img/footer/footer-logo.svg" width="" height="" alt="Cat Energy"></a>
+        <a class="footer__brand-link" href="#"><img class="footer__brand-picture" src="img/footer/footer-logo.svg" width="" height="" alt="Cat Energy"></a>
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a class="footer__social-link" href="https://vk.com/htmlacademy" target="_blank">
-              <img src="../img/footer/vk-mobile.svg" width="22" height="12">
+              <img src="img/footer/vk-mobile.svg" width="22" height="12">
             </a>
           </li>
           <li class="footer__social-item">
             <a class="footer__social-link" href="https://www.instagram.com/htmlacademy" target="_blank">
-              <img src="../img/footer/inst-mobile.svg" width="16" height="16">
+              <img src="img/footer/inst-mobile.svg" width="16" height="16">
             </a>
           </li>
           <li class="footer__social-item">
             <a class="footer__social-link" href="https://www.facebook.com/htmlacademy" target="_blank">
-              <img src="../img/footer/fb-mobile.svg" width="10" height="18">
+              <img src="img/footer/fb-mobile.svg" width="10" height="18">
             </a>
           </li>
         </ul>
         <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="footer__copyright-text">HTML Academy</span>
-          <img src="../img/footer/logo-html.svg" width="27" height="34">
+          <img src="img/footer/logo-html.svg" width="27" height="34">
         </a>
       </div>
     </footer>

@@ -18,17 +18,35 @@
 
 .work-stages__item {
   display: flex;
+  margin-top: 20px;
   list-style-type: none;
   background-position: left center;
   background-repeat: no-repeat;
 }
 
 .work-stages__description {
-  margin-bottom: 26px;
+  margin-bottom: 0;
+  padding-left: 80px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  font-style: normal;
   color: $more-dark-grey;
+  background-repeat: no-repeat;
+
+&--icon-leaf {
+  background-image: url("../img/work-stages/icon-leaf.svg");
+}
+
+&--icon-tub {
+  background-image: url("../img/work-stages/icon-tub.svg");
+}
+
+&--icon-eat {
+  background-image: url("../img/work-stages/icon-eat.svg");
+}
+
+&--icon-alarm {
+  background-image: url("../img/work-stages/icon-alarm.svg");
+}
 }
