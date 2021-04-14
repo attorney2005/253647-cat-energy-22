@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.offer__wrapper {
-  padding: 51px 20px;
-}
-
 .offer::before {
   position: absolute;
   content: "";
@@ -44,8 +40,6 @@
 .offer__picture {
   display: block;
   margin: 39px auto 0;
-  width: 290px;
-  height: 273px;
 }
 
 .offer__button {

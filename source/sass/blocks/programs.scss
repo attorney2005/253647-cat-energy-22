@@ -1,10 +1,9 @@
-.programms {
-  padding: 20px 20px 0 20px;
+.programs__wrapper {
+  margin-top: 20px;
 }
 
-.programms__programm {
+.programs__program {
   position: relative;
-  padding: 20px;
   background-color: $basic-grey;
 
   &:not(:first-of-type) {
@@ -12,7 +11,7 @@
   }
 }
 
-.programms__programm--slim::before {
+.programs__program--slim::before {
   position: absolute;
   content: "";
   top: 24;
@@ -23,7 +22,7 @@
   background-repeat: no-repeat;
 }
 
-.programms__programm--pro::before {
+.programs__program--pro::before {
   position: absolute;
   content: "";
   left: 22px;
@@ -34,7 +33,7 @@
   background-repeat: no-repeat;
 }
 
-.programms__programm-title {
+.programs__program-title {
   padding-left: 81px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
@@ -43,7 +42,7 @@
   color: $basic-black;
 }
 
-.programms__programm-description {
+.programs__program-description {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -52,7 +51,7 @@
   color: $more-dark-grey;
 }
 
-.programms__programm-link {
+.programs__program-link {
   display: block;
   margin-top: 19px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -65,7 +64,7 @@
   border-top: 1px solid $dark-grey;
 }
 
-.programms__programm-link::before {
+.programs__program-link::before {
   position: absolute;
   content: "";
   top: 198px;

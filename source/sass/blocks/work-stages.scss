@@ -1,5 +1,6 @@
-.work-stages {
-  padding: 20px;
+.work-stages__wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .work-stages__title {
@@ -34,19 +35,19 @@
   color: $more-dark-grey;
   background-repeat: no-repeat;
 
-&--icon-leaf {
-  background-image: url("../img/work-stages/icon-leaf.svg");
-}
+  &--icon-leaf {
+    background-image: url("../img/work-stages/icon-leaf.svg");
+  }
 
-&--icon-tub {
-  background-image: url("../img/work-stages/icon-tub.svg");
-}
+  &--icon-tub {
+    background-image: url("../img/work-stages/icon-tub.svg");
+  }
 
-&--icon-eat {
-  background-image: url("../img/work-stages/icon-eat.svg");
-}
+  &--icon-eat {
+    background-image: url("../img/work-stages/icon-eat.svg");
+  }
 
-&--icon-alarm {
-  background-image: url("../img/work-stages/icon-alarm.svg");
-}
+  &--icon-alarm {
+    background-image: url("../img/work-stages/icon-alarm.svg");
+  }
 }
