@@ -3,10 +3,10 @@
 }
 
 .footer__wrapper {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  padding-top: 31px;
+  padding-bottom: 22px;
+  border-top: 1px solid dark-grey;
+  border-bottom: 1px solid dark-grey;
 }
 
 .page-footer__brand-picture {
@@ -19,8 +19,8 @@
   @include reset-list;
   display: flex;
   justify-content: space-around;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid dark-grey;
+  border-bottom: 1px solid dark-grey;
 }
 
 .footer__social-item {

@@ -1,9 +1,10 @@
 .button {
   @include reset-button;
+  padding: 7px 44px;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
   font-family: $basic-font;
   text-transform: uppercase;
-  background-color: #68b738;
+  background-color: $basic-green;
 }

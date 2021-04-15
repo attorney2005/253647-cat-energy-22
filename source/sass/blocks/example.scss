@@ -2,6 +2,10 @@
   background-color: $dark-grey2;
 }
 
+.example__wrapper {
+  padding-top: 27px;
+}
+
 .example__title {
   margin: 0;
   font-family: $basic-font;
@@ -27,7 +31,7 @@
 }
 
 .example__weight-item {
-  margin: 0;
+  margin-top: 25px;
   width: 124px;
   list-style-type: none;
   text-align: center;
@@ -47,6 +51,7 @@
   line-height: 24px;
   font-family: $basic-font;
   text-transform: uppercase;
+  color: $basic-black;
 }
 
 .example__subtitle {
@@ -55,22 +60,24 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  color: $more-dark-grey;
 }
 
 
 .example__cost {
   display: block;
-  margin-top: 15px;
+  margin-top: 34px;
   font-family: $basic-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  color: $basic-black;
 }
 
 .example__picture {
-  margin-top: 30px;
+  margin-top: 42px;
 }
 
 .example__slider {
@@ -82,6 +89,7 @@
 }
 
 .example__button {
+  margin: 27px 0 31px 0;
   font-family: $basic-font;
   font-weight: 400;
   font-size: 16px;
@@ -96,6 +104,7 @@
 .example__scale {
   position: relative;
   display: block;
+  margin: 27px 0 31px 0;
   width: 84px;
   height: 14px;
   border: 1px solid $special-light-grey3;
@@ -110,6 +119,6 @@
   height: 6px;
   left: 3px;
   top: 3px;
-  background-color: #68b738;
+  background-color: $basic-green;
   border-radius: 6px;
 }
