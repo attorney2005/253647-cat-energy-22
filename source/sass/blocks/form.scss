@@ -2,6 +2,28 @@
   padding: 0 20px;
 }
 
+.form__title {
+  margin: 0;
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.form__title-common {
+  font-family: Oswald;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
 .form__header {
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
   color: #000000;
 }

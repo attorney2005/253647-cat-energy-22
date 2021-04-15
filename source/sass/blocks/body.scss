@@ -6,13 +6,21 @@
   color: $more-dark-grey;
 }
 
+.body-form {
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 .container {
   margin: 0 auto;
   padding: 0;
 }
 
 .main__title {
-  font-family: "Oswald", "Arial", sans-serif;;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
