@@ -4,7 +4,7 @@
 
 .example__title {
   margin: 0;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $basic-font;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -14,7 +14,6 @@
 
 .example__text {
   margin: 33px 0 0 0;
-  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -46,13 +45,12 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $basic-font;
   text-transform: uppercase;
 }
 
 .example__subtitle {
   margin-top: 10px;
-  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -63,7 +61,7 @@
 .example__cost {
   display: block;
   margin-top: 15px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $basic-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -84,7 +82,7 @@
 }
 
 .example__button {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $basic-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

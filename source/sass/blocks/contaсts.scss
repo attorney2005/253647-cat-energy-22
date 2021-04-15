@@ -9,8 +9,7 @@
 
 .contaсts__address-title {
   margin: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
+  font-family: $basic-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -20,7 +19,6 @@
 
 .contaсts__address-text {
   margin: 0;
-  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;

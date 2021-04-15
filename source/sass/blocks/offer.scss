@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.offer__wrapper {
+  padding-top: 20px;
+}
+
 .offer::before {
   position: absolute;
   content: "";
@@ -22,7 +26,7 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $basic-font;
   color: $basic-white;
 }
 
@@ -34,7 +38,7 @@
   font-weight: 400;
   color: $basic-white;
   text-transform: uppercase;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $basic-font;
 }
 
 .offer__picture {

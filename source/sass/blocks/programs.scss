@@ -3,6 +3,7 @@
 }
 
 .programs__program {
+  padding: 20px;
   position: relative;
   background-color: $basic-grey;
 
@@ -35,7 +36,7 @@
 
 .programs__program-title {
   padding-left: 81px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $basic-font;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -43,7 +44,6 @@
 }
 
 .programs__program-description {
-  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -54,7 +54,7 @@
 .programs__program-link {
   display: block;
   margin-top: 19px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $basic-font;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
