@@ -28,17 +28,9 @@
 }
 
 .footer__copyright-link {
+  @include font-size-line(16, 18);
   display: flex;
   justify-content: space-between;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: $more-dark-grey;
-}
-
-.footer__copyright-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
   color: $more-dark-grey;
 }

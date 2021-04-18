@@ -1,10 +1,17 @@
 .button {
   @include reset-button;
-  padding: 7px 44px;
+  @include font-oswald;
+  @include font-size-line(14, 18);
   text-align: center;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: $basic-font;
   text-transform: uppercase;
-  background-color: $basic-green;
+
+  &--green {
+    background-color: $basic-green;
+    color: $basic-white;
+  }
+
+  &--before-after {
+    background-color: transparent;
+    color: $basic-black;
+  }
 }

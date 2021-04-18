@@ -21,24 +21,20 @@
 }
 
 .offer__title {
+  @include font-oswald;
+  @include font-size-line(36, 36);
   margin-top: 29px;
   text-align: center;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  font-family: $basic-font;
   color: $basic-white;
 }
 
 .offer__subtitle {
+  @include font-oswald;
   margin: 25px 0 0 0;
   text-align: center;
-  font-size: 14px;
   line-height: 14px;
-  font-weight: 400;
   color: $basic-white;
   text-transform: uppercase;
-  font-family: $basic-font;
 }
 
 .offer__picture {
@@ -48,6 +44,4 @@
 
 .offer__button {
   display: block;
-  background-color: $basic-green;
-  color: $basic-white;
 }

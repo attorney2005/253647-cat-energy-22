@@ -8,21 +8,13 @@
 
 .example__title {
   margin: 0;
-  font-family: $basic-font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+  @include font-oswald;
+  @include font-size-line(36, 40);
   color: $basic-black;
 }
 
 .example__text {
   margin: 33px 0 0 0;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  font-style: normal;
-  color: $more-dark-grey;
 }
 
 .example__weight {
@@ -31,9 +23,9 @@
 }
 
 .example__weight-item {
+  @include reset-list;
   margin-top: 25px;
   width: 124px;
-  list-style-type: none;
   text-align: center;
   border: 1px solid $special-light-grey3;
   border-radius: 3px;
@@ -46,30 +38,26 @@
 .example__value {
   margin-top: 17px;
   display: block;
-  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  font-family: $basic-font;
+
+  @include font-oswald;
   text-transform: uppercase;
   color: $basic-black;
 }
 
 .example__subtitle {
   margin-top: 10px;
-  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: $more-dark-grey;
 }
 
 
 .example__cost {
   display: block;
   margin-top: 34px;
-  font-family: $basic-font;
-  font-weight: 400;
-  font-size: 14px;
+  @include font-oswald;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -89,16 +77,9 @@
 }
 
 .example__button {
+  @include font-size-line(16, 20);
   margin: 27px 0 31px 0;
-  font-family: $basic-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: $basic-black;
-  border: none;
 }
 
 .example__scale {

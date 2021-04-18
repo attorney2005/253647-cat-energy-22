@@ -5,11 +5,8 @@
 
 .work-stages__title {
   height: 70px;
-  font-family: $basic-font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+  @include font-oswald;
+  @include font-size-line(36, 40);
   color: $basic-black;
 }
 
@@ -28,10 +25,6 @@
 .work-stages__description {
   margin-bottom: 0;
   padding-left: 80px;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: $more-dark-grey;
   background-repeat: no-repeat;
 
   &--icon-leaf {

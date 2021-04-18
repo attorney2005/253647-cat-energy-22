@@ -34,6 +34,7 @@
   @include reset-button;
   width: 24px;
   height: 18px;
+  background-color: transparent;
 }
 
 .main-nav__list {
@@ -45,12 +46,6 @@
   text-align: center;
   text-decoration: none;
   list-style: none;
-  font-family: $basic-font;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 .site-list__item:not(:first-of-type) {
@@ -58,11 +53,8 @@
 }
 
 .site-list__link {
-  font-family: $basic-font;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
+  @include font-oswald(500);
+  @include font-size-line(20, 20);
   text-transform: uppercase;
   color: $basic-black;
 }
