@@ -30,9 +30,9 @@
 
 .offer__subtitle {
   @include font-oswald;
+  @include font-size-line(14, 14);
   margin: 25px 0 0 0;
   text-align: center;
-  line-height: 14px;
   color: $basic-white;
   text-transform: uppercase;
 }

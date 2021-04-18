@@ -7,31 +7,31 @@
   position: relative;
   background-color: $basic-grey;
 
-  &:not(:first-of-type) {
-    margin-top: 20px;
+  &--slim::before {
+    position: absolute;
+    content: "";
+    top: 24;
+    left: 22px;
+    width: 53px;
+    height: 53px;
+    background-image: url("../img/programs/cat-back-sit.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--pro::before {
+    position: absolute;
+    content: "";
+    left: 22px;
+    top: 24;
+    width: 67px;
+    height: 53px;
+    background-image: url("../img/programs/cat-back-run.svg");
+    background-repeat: no-repeat;
   }
 }
 
-.programs__program--slim::before {
-  position: absolute;
-  content: "";
-  top: 24;
-  left: 22px;
-  width: 53px;
-  height: 53px;
-  background-image: url("../img/programs/cat-back-sit.svg");
-  background-repeat: no-repeat;
-}
-
-.programs__program--pro::before {
-  position: absolute;
-  content: "";
-  left: 22px;
-  top: 24;
-  width: 67px;
-  height: 53px;
-  background-image: url("../img/programs/cat-back-run.svg");
-  background-repeat: no-repeat;
+.programs__program:not(:first-of-type) {
+  margin-top: 20px;
 }
 
 .programs__program-title {

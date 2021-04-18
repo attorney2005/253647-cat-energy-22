@@ -1,9 +1,9 @@
 .body {
+  @include font-size-line(14, 18);
   margin: 0;
   padding: 0;
   font-family: $second-font;
-
-  @include font-size-line(14, 18);
+  font-style: normal;
   font-weight: 400;
   color: $more-dark-grey;
 }

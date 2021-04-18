@@ -8,10 +8,9 @@
 }
 
 .contaсts__address-title {
-  margin: 0;
-
   @include font-oswald;
   @include font-size-line(16, 18);
+  margin: 0;
   text-transform: uppercase;
   color: $special-black;
 }

@@ -23,14 +23,9 @@
   border-bottom: 1px solid dark-grey;
 }
 
-.footer__social-item {
-  list-style-type: none;
-}
-
 .footer__copyright-link {
   @include font-size-line(16, 18);
   display: flex;
   justify-content: space-between;
-  font-weight: 400;
   color: $more-dark-grey;
 }

@@ -7,10 +7,9 @@
 }
 
 .example__title {
-  margin: 0;
-
   @include font-oswald;
   @include font-size-line(36, 40);
+  margin: 0;
   color: $basic-black;
 }
 
@@ -24,7 +23,6 @@
 }
 
 .example__weight-item {
-  @include reset-list;
   margin-top: 25px;
   width: 124px;
   text-align: center;
@@ -37,30 +35,26 @@
 }
 
 .example__value {
+  @include font-oswald;
+  @include font-size-line(24, 24);
   margin-top: 17px;
   display: block;
-  font-size: 24px;
-  line-height: 24px;
-
-  @include font-oswald;
   text-transform: uppercase;
   color: $basic-black;
 }
 
 .example__subtitle {
+  @include font-size-line(12, 12);
   margin-top: 10px;
-  font-size: 12px;
-  line-height: 12px;
   text-align: center;
 }
 
 
 .example__cost {
+  @include font-oswald;
+  @include font-size-line(14, 20);
   display: block;
   margin-top: 34px;
-
-  @include font-oswald;
-  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
