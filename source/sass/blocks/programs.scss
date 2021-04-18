@@ -36,6 +36,7 @@
 
 .programs__program-title {
   padding-left: 81px;
+
   @include font-oswald;
   @include font-size-line(24, 37);
   text-transform: uppercase;

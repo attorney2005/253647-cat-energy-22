@@ -8,6 +8,7 @@
 
 .example__title {
   margin: 0;
+
   @include font-oswald;
   @include font-size-line(36, 40);
   color: $basic-black;
@@ -57,6 +58,7 @@
 .example__cost {
   display: block;
   margin-top: 34px;
+
   @include font-oswald;
   line-height: 20px;
   text-align: center;

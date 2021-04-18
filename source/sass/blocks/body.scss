@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: $second-font;
+
   @include font-size-line(14, 18);
   font-weight: 400;
   color: $more-dark-grey;

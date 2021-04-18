@@ -5,6 +5,7 @@
 
 .work-stages__title {
   height: 70px;
+
   @include font-oswald;
   @include font-size-line(36, 40);
   color: $basic-black;
