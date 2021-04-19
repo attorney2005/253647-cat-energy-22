@@ -3,9 +3,10 @@
 }
 
 .footer__wrapper {
-  padding: 20px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  padding-top: 31px;
+  padding-bottom: 22px;
+  border-top: 1px solid $dark-grey;
+  border-bottom: 1px solid $dark-grey;
 }
 
 .page-footer__brand-picture {
@@ -18,28 +19,16 @@
   @include reset-list;
   display: flex;
   justify-content: space-around;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
 }
 
 .footer__social-item {
-  list-style-type: none;
+  border-top: 1px solid $dark-grey;
+  border-bottom: 1px solid $dark-grey;
 }
 
 .footer__copyright-link {
+  @include font-size-line(16, 18);
   display: flex;
   justify-content: space-between;
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: $more-dark-grey;
-}
-
-.footer__copyright-text {
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
   color: $more-dark-grey;
 }

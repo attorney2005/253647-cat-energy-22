@@ -1,14 +1,13 @@
-.work-stages {
-  padding: 20px;
+.work-stages__wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .work-stages__title {
   height: 70px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+
+  @include font-oswald;
+  @include font-size-line(36, 40);
   color: $basic-black;
 }
 
@@ -18,17 +17,30 @@
 
 .work-stages__item {
   display: flex;
+  margin-top: 20px;
   list-style-type: none;
   background-position: left center;
   background-repeat: no-repeat;
 }
 
 .work-stages__description {
-  margin-bottom: 26px;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  font-style: normal;
-  color: $more-dark-grey;
+  margin-bottom: 0;
+  padding-left: 80px;
+  background-repeat: no-repeat;
+
+  &--icon-leaf {
+    background-image: url("../img/work-stages/icon-leaf.svg");
+  }
+
+  &--icon-tub {
+    background-image: url("../img/work-stages/icon-tub.svg");
+  }
+
+  &--icon-eat {
+    background-image: url("../img/work-stages/icon-eat.svg");
+  }
+
+  &--icon-alarm {
+    background-image: url("../img/work-stages/icon-alarm.svg");
+  }
 }

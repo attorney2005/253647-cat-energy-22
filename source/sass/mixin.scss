@@ -8,6 +8,15 @@
   padding: 0;
   margin: 0;
   border: none;
-  font: inherit;
-  background-color: transparent;
+}
+
+@mixin font-oswald($fontWeight: 400) {
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: $fontWeight;
+}
+
+@mixin font-size-line($fontSize, $fontLine) {
+  font-size: #{$fontSize}px;
+  line-height: #{$fontLine}px;
 }

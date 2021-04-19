@@ -3,27 +3,18 @@
 }
 
 .example__wrapper {
-  padding: 20px;
+  padding-top: 27px;
 }
 
 .example__title {
+  @include font-oswald;
+  @include font-size-line(36, 40);
   margin: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
   color: $basic-black;
 }
 
 .example__text {
   margin: 33px 0 0 0;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  font-style: normal;
-  color: $more-dark-grey;
 }
 
 .example__weight {
@@ -32,9 +23,8 @@
 }
 
 .example__weight-item {
-  margin: 0;
+  margin-top: 25px;
   width: 124px;
-  list-style-type: none;
   text-align: center;
   border: 1px solid $special-light-grey3;
   border-radius: 3px;
@@ -45,38 +35,33 @@
 }
 
 .example__value {
+  @include font-oswald;
+  @include font-size-line(24, 24);
   margin-top: 17px;
   display: block;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+  color: $basic-black;
 }
 
 .example__subtitle {
+  @include font-size-line(12, 12);
   margin-top: 10px;
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
   text-align: center;
 }
 
 
 .example__cost {
+  @include font-oswald;
+  @include font-size-line(14, 20);
   display: block;
-  margin-top: 15px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  margin-top: 34px;
   text-align: center;
   text-transform: uppercase;
+  color: $basic-black;
 }
 
 .example__picture {
-  margin-top: 30px;
+  margin-top: 42px;
 }
 
 .example__slider {
@@ -88,20 +73,15 @@
 }
 
 .example__button {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font-size-line(16, 20);
+  margin: 27px 0 31px 0;
   align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: $basic-black;
-  border: none;
 }
 
 .example__scale {
   position: relative;
   display: block;
+  margin: 27px 0 31px 0;
   width: 84px;
   height: 14px;
   border: 1px solid $special-light-grey3;
@@ -116,6 +96,6 @@
   height: 6px;
   left: 3px;
   top: 3px;
-  background-color: #68b738;
+  background-color: $basic-green;
   border-radius: 6px;
 }

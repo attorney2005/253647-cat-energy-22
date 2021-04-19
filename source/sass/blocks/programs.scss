@@ -1,76 +1,65 @@
-.programms {
-  padding: 20px 20px 0 20px;
+.programs__wrapper {
+  margin-top: 20px;
 }
 
-.programms__programm {
-  position: relative;
+.programs__program {
   padding: 20px;
+  position: relative;
   background-color: $basic-grey;
 
-  &:not(:first-of-type) {
-    margin-top: 20px;
+  &--slim::before {
+    position: absolute;
+    content: "";
+    top: 24;
+    left: 22px;
+    width: 53px;
+    height: 53px;
+    background-image: url("../img/programs/cat-back-sit.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--pro::before {
+    position: absolute;
+    content: "";
+    left: 22px;
+    top: 24;
+    width: 67px;
+    height: 53px;
+    background-image: url("../img/programs/cat-back-run.svg");
+    background-repeat: no-repeat;
   }
 }
 
-.programms__programm--slim::before {
-  position: absolute;
-  content: "";
-  top: 24;
-  left: 22px;
-  width: 53px;
-  height: 53px;
-  background-image: url("../../img/programs/cat-back-sit.png");
-  background-repeat: no-repeat;
+.programs__program:not(:first-of-type) {
+  margin-top: 20px;
 }
 
-.programms__programm--pro::before {
-  position: absolute;
-  content: "";
-  left: 22px;
-  top: 24;
-  width: 67px;
-  height: 53px;
-  background-image: url("../../img/programs/cat-back-run.png");
-  background-repeat: no-repeat;
-}
-
-.programms__programm-title {
+.programs__program-title {
   padding-left: 81px;
-  background-repeat: no-repeat;
-  background-position: left top;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 37px;
+
+  @include font-oswald;
+  @include font-size-line(24, 37);
   text-transform: uppercase;
   color: $basic-black;
-
-  &--slim {
-    background-image: url("../img/cat_back.png");
-  }
-
-  &--pro {
-    background-image: url("#");
-  }
 }
 
-.programms__programm-description {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  font-style: normal;
-  color: $more-dark-grey;
-}
-
-.programms__programm-link {
+.programs__program-link {
+  @include font-oswald;
+  @include font-size-line(16, 16);
   display: block;
   margin-top: 19px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  font-style: normal;
   color: $basic-black;
   text-transform: uppercase;
+  border-top: 1px solid $dark-grey;
+}
+
+.programs__program-link::before {
+  position: absolute;
+  content: "";
+  top: 198px;
+  left: 116px;
+  width: 53px;
+  height: 53px;
+  background-image: url("../img/programs/icon-arrow.svg");
+  background-repeat: no-repeat;
 }

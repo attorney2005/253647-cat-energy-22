@@ -4,27 +4,20 @@
 
 .contaсts__address {
   display: flex;
-  padding: 20px;
+  padding: 28px 20px;
 }
 
 .contaсts__address-title {
+  @include font-oswald;
+  @include font-size-line(16, 18);
   margin: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
   color: $special-black;
 }
 
 .contaсts__address-text {
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 20px;
-  color: $more-dark-grey;
 }
 
 .contacts__place {
