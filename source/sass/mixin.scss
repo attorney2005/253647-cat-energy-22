@@ -1,12 +1,15 @@
-@mixin reset-list {
+@mixin reset {
   margin: 0;
   padding: 0;
+}
+
+@mixin reset-list {
+  @include reset;
   list-style: none;
 }
 
 @mixin reset-button {
-  padding: 0;
-  margin: 0;
+  @include reset;
   border: none;
 }
 
