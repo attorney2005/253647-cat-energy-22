@@ -4,6 +4,7 @@
   @include font-size-line(14, 18);
   text-align: center;
   text-transform: uppercase;
+  white-space: nowrap;
 
   &--green {
     background-color: $basic-green;
@@ -13,5 +14,10 @@
   &--before-after {
     background-color: transparent;
     color: $basic-black;
+  }
+
+  &--grey {
+    background-color: $basic-grey;
+    color: $more-dark-grey;
   }
 }

@@ -1,0 +1,75 @@
+.catalog__title {
+  @include font-oswald;
+  @include font-size-line(36, 36);
+  padding: 0 20px;
+  color: $basic-black;
+}
+
+.catalog__card-title {
+  @include font-oswald;
+  @include font-size-line(16, 20);
+  color: $special-light-black;
+}
+
+.catalog__card {
+  padding: 0 20px;
+}
+
+.catalog__list {
+  @include font-size-line(12, 16);
+}
+
+.catalog__card-button {
+  @include font-size-line(16, 20);
+  display: block;
+  padding: 10px 109px;
+}
+
+.catalog__card-link {
+  display: block;
+}
+
+.catalog__card-title--everything {
+  text-transform: uppercase;
+}
+
+.catalog__card-subtitle {
+  @include font-size-line(12, 16);
+}
+
+.catalog__additional-title {
+  @include font-oswald;
+  @include font-size-line(24, 24);
+  color: $basic-black;
+}
+
+.catalog__additional-list {
+  @include reset-list;
+  padding: 0 20px;
+}
+
+.catalog__additional-name {
+  @include font-oswald;
+  @include font-size-line(16, 16);
+  color: $special-light-black;
+}
+
+.catalog__additional-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.additional__block {
+  padding: 0 20px;
+  background-image: url("../img/catalog/cat.jpg");
+  width: 100%;
+  height: 289px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.additional__text {
+  @include font-size-line(16, 20);
+  color: $basic-white;
+}
