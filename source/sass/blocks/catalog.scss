@@ -17,12 +17,26 @@
 
 .catalog__list {
   @include font-size-line(12, 16);
+  margin-top: 13px;
+}
+
+.catalog__list-attribute {
+display: flex;
+justify-content: space-between
+}
+.catalog__item-key {
+  margin: 3px 67px 0 0;
+}
+
+.catalog__item-value {
+  margin: 3px 0 0 0;
 }
 
 .catalog__card-button {
   @include font-size-line(16, 20);
   display: block;
-  padding: 10px 109px;
+  margin: 21px 0 0 0;
+  padding: 10px 94px;
 }
 
 .catalog__card-link {
@@ -35,6 +49,7 @@
 
 .catalog__card-subtitle {
   @include font-size-line(12, 16);
+  margin-top: 8px;
 }
 
 .catalog__additional-title {
@@ -48,10 +63,16 @@
   padding: 0 20px;
 }
 
+.catalog-additional-attributes {
+  display:flex;
+  justify-content:space-between;
+}
+
 .catalog__additional-name {
   @include font-oswald;
   @include font-size-line(16, 16);
   color: $special-light-black;
+  text-transform: uppercase;
 }
 
 .catalog__additional-card {
@@ -60,6 +81,7 @@
 }
 
 .additional__block {
+  margin: 57px 0 0 0;
   padding: 0 20px;
   background-image: url("../img/catalog/cat.jpg");
   width: 100%;
@@ -72,4 +94,11 @@
 .additional__text {
   @include font-size-line(16, 20);
   color: $basic-white;
+}
+
+.catalog__additional-button {
+  @include font-size-line(16, 20);
+  display: block;
+  margin: 15px 0 0 0;
+  padding: 10px 109px;
 }
