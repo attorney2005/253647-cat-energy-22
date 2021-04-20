@@ -21,9 +21,10 @@
 }
 
 .catalog__list-attribute {
-display: flex;
-justify-content: space-between
+  display: flex;
+  justify-content: space-between;
 }
+
 .catalog__item-key {
   margin: 3px 67px 0 0;
 }
@@ -64,8 +65,8 @@ justify-content: space-between
 }
 
 .catalog-additional-attributes {
-  display:flex;
-  justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog__additional-name {
