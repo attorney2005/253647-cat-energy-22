@@ -20,8 +20,8 @@
       </a>
       <a class="header__name-link" href="#">
         <img class="header__name" src="img/heder/logo-mobile-text.svg" width="" height="" alt="Cat Energy">
-        <button class="main-nav__toggle" type="button">
       </a>
+      <button class="header__toggle" type="button">
         <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5" />
           <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5" />
@@ -29,21 +29,21 @@
         </svg>
       </button>
     </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active">
+    <nav class="header__nav">
+      <div class="header__nav-wrapper">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -119,8 +119,12 @@
         </ul>
         <strong class="example__cost"> Затраты на питание: 15 000 руб.</strong>
       </div>
-      <img class="example__picture" src="img/example/before-mobile.png" width="" height="" alt="Толстый кот">
-      <img class="example__picture" src="img/example/after-mobile.png" width="" height="" alt="Худой кот" hidden>
+      <div>
+        <img class="example__picture" src="img/example/before-mobile.png" width="" height="" alt="Толстый кот">
+      </div>
+      <div>
+        <img class="example__picture" src="img/example/after-mobile.png" width="" height="" alt="Худой кот" hidden>
+      </div>
       <div class="example__slider">
         <button class="button button--before-after example__button" type="button">Было</button>
         <div class="example__range-control">

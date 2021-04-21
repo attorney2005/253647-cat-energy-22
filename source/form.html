@@ -11,17 +11,17 @@
 <body class="body">
   <header class="header">
     <div class="header__wrapper container">
-      <a class="header__logo-link" href="index.html">
+      <a class="header__logo-link">
         <picture class="header__logo">
           <source media="(min-width: 1150px)" srcset="img/heder/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/heder/logo-tablet.svg">
           <img src="img/heder/logo-mobile.svg" alt="Кэт энерджи">
         </picture>
       </a>
-      <a class="header__name-link" href="index.html">
+      <a class="header__name-link" href="#">
         <img class="header__name" src="img/heder/logo-mobile-text.svg" width="" height="" alt="Cat Energy">
-        <button class="main-nav__toggle" type="button">
       </a>
+        <button class="header__toggle" type="button">
         <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5" />
           <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5" />
@@ -29,21 +29,21 @@
         </svg>
       </button>
     </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
+    <nav class="header__nav">
+      <div class="header__nav-wrapper">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="form.html">
               Подбор программы
             </a>
           </li>
