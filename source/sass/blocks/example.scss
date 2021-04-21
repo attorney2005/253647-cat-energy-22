@@ -17,12 +17,12 @@
   margin: 33px 0 0 0;
 }
 
-.example__weight {
+.example__results {
   @include reset-list;
   display: flex;
 }
 
-.example__weight-item {
+.example__result {
   margin-top: 25px;
   width: 124px;
   text-align: center;
@@ -34,7 +34,7 @@
   }
 }
 
-.example__value {
+.example__result-value {
   @include font-oswald;
   @include font-size-line(24, 24);
   margin-top: 17px;
@@ -43,7 +43,7 @@
   color: $basic-black;
 }
 
-.example__subtitle {
+.example__result-subtitle {
   @include font-size-line(12, 12);
   margin-top: 10px;
   text-align: center;
