@@ -3,6 +3,7 @@
 }
 
 .programs__program {
+  @include reset-list;
   padding: 20px;
   position: relative;
   background-color: $basic-grey;
