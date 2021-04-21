@@ -16,20 +16,24 @@
 }
 
 .catalog__list {
+  @include reset-list;
+}
+
+.catalog__attribute-list {
   @include font-size-line(12, 16);
   margin-top: 13px;
 }
 
-.catalog__list-attribute {
+.catalog__attribute {
   display: flex;
   justify-content: space-between;
 }
 
-.catalog__item-key {
+.catalog__attribute-name {
   margin: 3px 67px 0 0;
 }
 
-.catalog__item-value {
+.catalog__attribute-value {
   margin: 3px 0 0 0;
 }
 
@@ -44,7 +48,7 @@
   display: block;
 }
 
-.catalog__card-title--everything {
+.catalog__card--everything h2 {
   text-transform: uppercase;
 }
 
