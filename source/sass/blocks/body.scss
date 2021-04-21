@@ -7,10 +7,3 @@
   font-weight: 400;
   color: $more-dark-grey;
 }
-
-.main__title {
-  @include font-size-line(36, 36);
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  color: #000000;
-}

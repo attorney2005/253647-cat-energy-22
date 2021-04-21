@@ -11,11 +11,11 @@
 @mixin reset-button {
   @include reset;
   border: none;
+  background-color: transparent;
 }
 
 @mixin font-oswald($fontWeight: 400) {
   font-family: $basic-font;
-  font-style: normal;
   font-weight: $fontWeight;
 }
 
