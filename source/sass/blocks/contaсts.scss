@@ -1,13 +1,13 @@
-.contaсts__wrapper {
+.contacts__wrapper {
   position: relative;
 }
 
-.contaсts__address {
+.contacts__address {
   display: flex;
   padding: 28px 20px;
 }
 
-.contaсts__address-title {
+.contacts__address-title {
   @include font-oswald;
   @include font-size-line(16, 18);
   margin: 0;
@@ -15,13 +15,14 @@
   color: $special-black;
 }
 
-.contaсts__address-text {
+.contacts__address-text {
   margin: 0;
   line-height: 20px;
 }
 
-.contacts__place {
-  position: absolute;
-  top: 240px;
-  left: 131px;
+.contacts__map > iframe {
+  display: block;
+  width: 100%;
+  height: 362px;
+  border: 0;
 }
