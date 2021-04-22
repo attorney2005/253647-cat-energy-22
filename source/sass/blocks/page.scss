@@ -1,5 +1,12 @@
-.body {
+.page {
+  height: 100%;
+}
+
+.page__body {
   @include font-size-line(14, 18);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   margin: 0;
   padding: 0;
   font-family: $second-font;
