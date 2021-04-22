@@ -9,7 +9,7 @@
 }
 
 @mixin reset-button {
-  @include reset;
+  margin: 0;
   border: none;
   background-color: transparent;
 }

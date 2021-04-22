@@ -108,10 +108,10 @@
 .header__nav-item {
   padding: 24px 0;
   text-align: center;
-  margin-left: 32px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-left: 32px;
   }
 }
 

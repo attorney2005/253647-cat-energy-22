@@ -1,10 +1,10 @@
 .button {
-  @include reset-button;
   @include font-oswald;
   @include font-size-line(14, 18);
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+  background-color: transparent;
 
   &--green {
     background-color: $basic-green;
