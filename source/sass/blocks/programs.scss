@@ -8,6 +8,10 @@
   position: relative;
   background-color: $basic-grey;
 
+  @media (min-width: $tablet-width) {
+    padding: 77px 62px 57px 52px;
+  }
+
   &--slim::before {
     position: absolute;
     content: "";
@@ -17,6 +21,16 @@
     height: 53px;
     background-image: url("../img/programs/cat-back-sit.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      top: 44px;
+      left: 466px;
+      width: 200px;
+      height: 200px;
+      background-size: 200px 200px;
+    }
   }
 
   &--pro::before {
@@ -28,6 +42,16 @@
     height: 53px;
     background-image: url("../img/programs/cat-back-run.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      top: 44px;
+      left: 466px;
+      width: 200px;
+      height: 200px;
+      background-size: 200px 200px;
+    }
   }
 }
 
@@ -42,6 +66,21 @@
   @include font-size-line(24, 37);
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald;
+    @include font-size-line(36, 36);
+    text-transform: uppercase;
+    color: $basic-black;
+  }
+}
+
+.programs__program-description {
+  @media (min-width: $tablet-width) {
+    @include font-oswald;
+    @include font-size-line(16, 24);
+    color: $basic-black;
+  }
 }
 
 .programs__program-link {
@@ -52,6 +91,14 @@
   color: $basic-black;
   text-transform: uppercase;
   border-top: 1px solid $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald;
+    @include font-size-line(20, 30);
+    text-transform: uppercase;
+    color: $basic-black;
+    border: none;
+  }
 }
 
 .programs__program-link::before {

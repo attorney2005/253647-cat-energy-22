@@ -1,11 +1,32 @@
+.header {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 66px;
+
+  @media (min-width: $tablet-width) {
+    height: 107px;
+  }
 }
 
 .header__logo-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 66px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
 }
 
 .header__logo {
@@ -13,46 +34,91 @@
 }
 
 .header__name-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 66px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header__name {
   display: block;
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header__nav {
+  display: block;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__nav-wrapper {
   border-top: 1px solid $special-light-grey;
   border-bottom: 1px solid $special-light-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .header__toggle {
   @include reset-button;
-  width: 24px;
-  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 66px;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header__nav-list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__nav-item {
   padding: 24px 0;
   text-align: center;
+  margin-left: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .header__nav-item:not(:first-of-type) {
   border-top: 1px solid $special-light-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .header__nav-link {
   @include font-oswald(500);
-  @include font-size-line(20, 20);
+  @include font-size-line(18, 24);
+  display: block;
   text-transform: uppercase;
   color: $basic-black;
 }

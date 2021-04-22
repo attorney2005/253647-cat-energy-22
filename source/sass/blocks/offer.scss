@@ -18,6 +18,10 @@
   background-size: cover;
   background-position: center top;
   z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .offer__title {
@@ -26,6 +30,12 @@
   margin-top: 29px;
   text-align: center;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald;
+    @include font-size-line(60, 60);
+    color: $basic-black;
+  }
 }
 
 .offer__subtitle {
@@ -35,11 +45,22 @@
   text-align: center;
   color: $basic-white;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald;
+    @include font-size-line(20, 20);
+    color: $basic-black;
+  }
 }
 
 .offer__picture {
   display: block;
   margin: 39px auto 0;
+
+  @media (min-width: $tablet-width) {
+    height: 609px;
+    width: 709px;
+  }
 }
 
 .offer__button {

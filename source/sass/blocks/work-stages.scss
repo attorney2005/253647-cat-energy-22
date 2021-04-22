@@ -4,18 +4,26 @@
 }
 
 .work-stages__title {
-  height: 70px;
-
   @include font-oswald;
   @include font-size-line(36, 40);
+  height: 70px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald;
+    @include font-size-line(60, 60);
+    color: $basic-black;
+  }
 }
 
 .work-stages__list {
-  @include reset-list;
+  @media (min-width: $tablet-width) {
+    display: block;
+    column-count: 2;
+  }
 }
-
 .work-stages__item {
+  @include reset-list;
   display: flex;
   margin-top: 20px;
   list-style-type: none;
@@ -42,5 +50,9 @@
 
   &--icon-alarm {
     background-image: url("../img/work-stages/icon-alarm.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+
   }
 }
