@@ -13,4 +13,23 @@
   font-style: normal;
   font-weight: 400;
   color: $more-dark-grey;
+
+
+  @media (min-width: $desktop-width) {
+    &--desktop {
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 696px;
+        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/offer/cat-background-desctop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        z-index: -1;
+      }
+    }
+  }
 }

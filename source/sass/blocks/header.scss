@@ -4,6 +4,10 @@
     justify-content: space-between;
     padding: 0 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .header__wrapper {
@@ -14,6 +18,10 @@
 
   @media (min-width: $tablet-width) {
     height: 107px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 120px;
   }
 }
 
