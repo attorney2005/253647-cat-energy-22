@@ -129,6 +129,10 @@
   display: block;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
 }
 
 .header__nav-link:hover {
