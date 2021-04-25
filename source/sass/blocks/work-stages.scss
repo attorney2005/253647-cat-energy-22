@@ -1,55 +1,89 @@
 .work-stages__wrapper {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 27px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 110px;
+  }
 }
 
 .work-stages__title {
   @include font-oswald;
   @include font-size-line(36, 40);
-  height: 70px;
+  margin: 0;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    @include font-oswald;
     @include font-size-line(60, 60);
-    color: $basic-black;
   }
 }
 
 .work-stages__list {
+  @include reset-list;
+
   @media (min-width: $tablet-width) {
-    display: block;
-    column-count: 2;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 37px 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+    column-gap: 70px;
   }
 }
 
 .work-stages__item {
-  @include reset-list;
+  position: relative;
   display: flex;
   margin-top: 20px;
   list-style-type: none;
   background-position: left center;
   background-repeat: no-repeat;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  &--icon-leaf::before {
+    background-image: url("../img/work-stages/icon-leaf.svg");
+  }
+
+  &--icon-tub::before {
+    background-image: url("../img/work-stages/icon-tub.svg");
+  }
+
+  &--icon-eat::before {
+    background-image: url("../img/work-stages/icon-eat.svg");
+  }
+
+  &--icon-alarm::before {
+    background-image: url("../img/work-stages/icon-alarm.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .work-stages__description {
   margin-bottom: 0;
   padding-left: 80px;
-  background-repeat: no-repeat;
 
-  &--icon-leaf {
-    background-image: url("../img/work-stages/icon-leaf.svg");
-  }
-
-  &--icon-tub {
-    background-image: url("../img/work-stages/icon-tub.svg");
-  }
-
-  &--icon-eat {
-    background-image: url("../img/work-stages/icon-eat.svg");
-  }
-
-  &--icon-alarm {
-    background-image: url("../img/work-stages/icon-alarm.svg");
+  @media (min-width: $desktop-width) {
+    margin-top: 91px;
+    padding: 0;
   }
 }
