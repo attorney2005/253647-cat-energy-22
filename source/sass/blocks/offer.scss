@@ -7,13 +7,28 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    display: flex;
-    flex-direction: column;
     padding: 20px 90px 221px;
   }
 }
 
 .offer::before {
+  position: absolute;
+  content: "";
+  top: 199px;
+  left: 0;
+  width: 280px;
+  height: 270px;
+  background-image: url("../../img/offer/can.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+
+  @media (min-width: $tablet-width) {
+    left: 240px;
+  }
+}
+
+.offer::after {
   position: absolute;
   content: "";
   top: 0;
@@ -46,7 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 98px;
+    margin: 0 700px 0 98px;
   }
 }
 
@@ -89,12 +104,12 @@
 
 .offer__button {
   display: block;
+  margin-top: 300px;
   padding: 7px 44px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 262px;
-    left: 118px;
+    display: inline-block;
+    margin-top: 49px;
     padding: 14px 26px;
   }
 

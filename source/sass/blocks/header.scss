@@ -124,13 +124,14 @@
 }
 
 .header__nav-link {
-  @include font-oswald(500);
+  @include font-oswald();
   @include font-size-line(18, 24);
   display: block;
   text-transform: uppercase;
   color: $basic-black;
 
   @media (min-width: $desktop-width) {
+    @include font-size-line(20, 30);
     color: $basic-white;
   }
 }

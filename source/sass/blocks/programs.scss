@@ -1,5 +1,20 @@
+.programs {
+  margin-top: 22px;
+}
+
 .programs__wrapper {
-  margin-top: 20px;
+  @include reset-list;
+  margin-top: 136px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0 110px;
+  }
 }
 
 .programs__program {
@@ -10,6 +25,20 @@
 
   @media (min-width: $tablet-width) {
     padding: 77px 62px 57px 52px;
+  }
+
+  &--slim {
+    @media (min-width: $desktop-width) {
+      @include reset-list;
+      margin-right: 40px;
+    }
+  }
+
+  &--pro {
+    @media (min-width: $desktop-width) {
+      @include reset-list;
+      margin-left: 40px;
+    }
   }
 
   &--slim::before {
@@ -30,6 +59,14 @@
       width: 200px;
       height: 200px;
       background-size: 200px 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background-size: contain;
     }
   }
 
@@ -52,14 +89,27 @@
       height: 200px;
       background-size: 200px 200px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background-size: contain;
+    }
   }
 }
 
 .programs__program:not(:first-of-type) {
   margin-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .programs__program-title {
+  margin: 0;
   padding-left: 81px;
 
   @include font-oswald;
@@ -68,46 +118,62 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    @include font-oswald;
     @include font-size-line(36, 36);
-    text-transform: uppercase;
-    color: $basic-black;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 0 0 0;
+    margin-left: 214px;
   }
 }
 
 .programs__program-description {
+  @include font-size-line(14, 18);
+  margin: 29px 0 0 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $dark-grey;
+  color: $basic-black;
+
+
   @media (min-width: $tablet-width) {
-    @include font-oswald;
     @include font-size-line(16, 24);
-    color: $basic-black;
+    padding-right: 200px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 73px;
+    padding: 0 52px;
   }
 }
 
 .programs__program-link {
   @include font-oswald;
   @include font-size-line(16, 16);
+  position: relative;
   display: block;
-  margin-top: 19px;
+  margin-top: 15px;
   color: $basic-black;
   text-transform: uppercase;
-  border-top: 1px solid $dark-grey;
 
   @media (min-width: $tablet-width) {
-    @include font-oswald;
     @include font-size-line(20, 30);
-    text-transform: uppercase;
-    color: $basic-black;
-    border: none;
   }
 }
 
 .programs__program-link::before {
   position: absolute;
   content: "";
-  top: 198px;
-  left: 116px;
+  top: 2px;
+  left: 92px;
   width: 53px;
   height: 53px;
   background-image: url("../img/programs/icon-arrow.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: 123px;
+  }
 }
