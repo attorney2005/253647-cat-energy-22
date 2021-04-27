@@ -7,7 +7,7 @@
   @include reset;
   list-style: none;
 }
-
+// удалить когда разберусь со всеми кнопками, потому что эти свойства есть .button
 @mixin reset-button {
   margin: 0;
   border: none;

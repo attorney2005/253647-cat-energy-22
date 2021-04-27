@@ -1,3 +1,9 @@
+.work-stages {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special-light-grey;
+  }
+}
+
 .work-stages__wrapper {
   padding: 27px 20px;
 

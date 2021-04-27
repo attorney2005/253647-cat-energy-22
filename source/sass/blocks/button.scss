@@ -5,6 +5,7 @@
   text-transform: uppercase;
   white-space: nowrap;
   background-color: transparent;
+  border: none;
 
   &--green {
     background-color: $basic-green;
@@ -12,7 +13,6 @@
   }
 
   &--before-after {
-    background-color: transparent;
     color: $basic-black;
   }
 

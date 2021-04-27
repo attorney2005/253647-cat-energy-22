@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class ="page" lang="ru" xmlns="http://www.w3.org/1999/html">
+<html class="page" lang="ru" xmlns="http://www.w3.org/1999/html">
 
 <head>
   <meta charset="UTF-8">
@@ -21,29 +21,24 @@
       <a class="header__name-link">
         <img class="header__name" src="img/heder/logo-mobile-text.svg" width="" height="" alt="Cat Energy">
       </a>
-      <button class="header__toggle" type="button">
-        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5" />
-          <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5" />
-          <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5" />
-        </svg>
+      <button class="button header__toggle" type="button">
       </button>
     </div>
     <nav class="header__nav">
       <div class="header__nav-wrapper">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a class="header__nav-link">
+            <a class="header__nav-link header__nav-link--light-on-desktop">
               Главная
             </a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="catalog.html">
+            <a class="header__nav-link header__nav-link--light-on-desktop" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="form.html">
+            <a class="header__nav-link header__nav-link--light-on-desktop" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -104,37 +99,41 @@
       </div>
     </section>
     <section class="example">
-      <div class="example__wrapper container">
+      <div class="example__wrapper">
         <h2 class="example__title">Живой пример</h2>
-        <p class="example__text"> Борис сбросил 5 кг за 2 месяца, просто завменив свой обычный корм на Cat Energy
+        <p class="example__text"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <ul class="example__results">
-          <li class="example__result">
-            <span class="example__result-value">5 кг</span>
-            <span class="example__result-subtitle">Снижение веса</span>
-          </li>
-          <li class="example__result">
-            <span class="example__result-value">60 дней</span>
-            <span class="example__result-subtitle">Затрачено времени</span>
-          </li>
-        </ul>
-        <p class="example__cost"> Затраты на питание: 15 000 руб.</p>
-      </div>
-      <div>
-        <img class="example__picture" src="img/example/before-mobile.png" width="" height="" alt="Толстый кот">
-      </div>
-      <div>
-        <img class="example__picture" src="img/example/after-mobile.png" width="" height="" alt="Худой кот" hidden>
-      </div>
-      <div class="example__slider">
-        <button class="button button--before-after example__button" type="button">Было</button>
-        <div class="example__range-control">
-          <div class="example__scale">
-            <div class="example__bar"></div>
-          </div>
+        <div class="example__wrapper-results">
+          <ul class="example__results">
+            <li class="example__result">
+              <span class="example__result-value">5 кг</span>
+              <span class="example__result-subtitle">Снижение веса</span>
+            </li>
+            <li class="example__result">
+              <span class="example__result-value">60 дней</span>
+              <span class="example__result-subtitle">Затрачено времени</span>
+            </li>
+          </ul>
+          <p class="example__cost"> Затраты на питание: 15 000 руб.</p>
         </div>
-        <button class="button button--before-after example__button" type="button">Стало</button>
+      </div>
+      <div class="example__wrapper-demo">
+        <div>
+          <img class="example__picture" src="img/example/before-mobile.png" width="" height="" alt="Толстый кот">
+        </div>
+        <div>
+          <img class="example__picture" src="img/example/after-mobile.png" width="" height="" alt="Худой кот" hidden>
+        </div>
+        <div class="example__slider">
+          <button class="button button--before-after example__button" type="button">Было</button>
+          <div class="example__range-control">
+            <div class="example__scale">
+              <div class="example__bar"></div>
+            </div>
+          </div>
+          <button class="button button--before-after example__button" type="button">Стало</button>
+        </div>
       </div>
     </section>
     <section class="contacts">

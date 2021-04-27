@@ -1,9 +1,51 @@
 .example {
+  position: relative;
   background-color: $dark-grey2;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      height: 462px;
+      width: 100%;
+      background-color: red;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .example__wrapper {
-  padding-top: 27px;
+  padding: 27px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 30px;
+  }
+}
+
+.example__wrapper-demo {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.example__wrapper-results {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__title {

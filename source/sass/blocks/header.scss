@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 25px 110px 0;
   }
 }
 
@@ -34,6 +34,11 @@
 
   @media (min-width: $tablet-width) {
     width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 
@@ -83,13 +88,11 @@
 }
 
 .header__toggle {
-  @include reset-button;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 74px;
   height: 66px;
-  background-color: transparent;
+  background-image: url("../img/heder/toggle-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 33px 21px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -106,12 +109,22 @@
 }
 
 .header__nav-item {
-  padding: 24px 0;
+  padding: 22px 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-left: 32px;
+    margin-left: 34px;
+  }
+}
+
+.header__nav-item:last-of-type {
+  @media (min-width: $tablet-width) {
+    margin-left: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 35px;
   }
 }
 
@@ -121,18 +134,30 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 34px;
+  }
 }
 
 .header__nav-link {
-  @include font-oswald();
-  @include font-size-line(18, 24);
+  @include font-oswald(500);
+  @include font-size-line(20, 20);
   display: block;
   text-transform: uppercase;
   color: $basic-black;
 
+  @media (min-width: $tablet-width) {
+    @include font-size-line(18, 24);
+    font-weight: 400;
+  }
+
   @media (min-width: $desktop-width) {
     @include font-size-line(20, 30);
-    color: $basic-white;
+
+    &--light-on-desktop {
+      color: $basic-white;
+    }
   }
 }
 
