@@ -46,6 +46,17 @@
   display: block;
 }
 
+.header__logo-link,
+.header__name-link {
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
+
 .header__name-link {
   display: flex;
   align-items: center;
@@ -143,13 +154,35 @@
 .header__nav-link {
   @include font-oswald(500);
   @include font-size-line(20, 20);
+  position: relative;
   display: block;
   text-transform: uppercase;
   color: $basic-black;
 
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
   @media (min-width: $tablet-width) {
     @include font-size-line(18, 24);
     font-weight: 400;
+
+    &--current {
+      &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        top: calc(50% + 20px);
+        left: 0;
+        background-color: $basic-green;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -159,12 +192,4 @@
       color: $basic-white;
     }
   }
-}
-
-.header__nav-link:hover {
-  color: $dark-grey3;
-}
-
-.header__nav-link:active {
-  color: $special-light-grey4;
 }
