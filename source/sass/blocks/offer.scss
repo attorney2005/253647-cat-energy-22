@@ -3,19 +3,19 @@
 }
 
 .offer__wrapper {
-  padding: 20px 20px 0 20px;
+  padding: 29px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 20px 90px 221px;
+    padding: 34px 90px 221px;
   }
 }
 
 .offer::before {
   position: absolute;
   content: "";
-  top: 199px;
-  left: 0;
+  top: 171px;
+  left: 20px;
   width: 280px;
   height: 270px;
   background-image: url("../../img/offer/can.png");
@@ -24,7 +24,10 @@
   background-position: center top;
 
   @media (min-width: $tablet-width) {
-    left: 240px;
+    left: 109px;
+    top: 235px;
+    width: 629px;
+    height: 509px;
   }
 }
 
@@ -34,7 +37,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 367px;
+  height: 305px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/offer/cat-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,7 +52,7 @@
 .offer__title {
   @include font-oswald;
   @include font-size-line(36, 36);
-  margin-top: 29px;
+  margin: 0;
   text-align: center;
   color: $basic-white;
 
@@ -74,10 +77,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    @include font-oswald;
     @include font-size-line(20, 20);
     text-align: left;
-    margin-left: 28px;
+    margin: 41px 0 0 28px;
     color: $basic-black;
   }
 
@@ -86,31 +88,17 @@
   }
 }
 
-.offer__picture {
-  display: block;
-  margin: 39px auto 0;
-
-  @media (min-width: $tablet-width) {
-    height: 609px;
-    width: 709px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 39px;
-    left: 521px;
-  }
-}
-
 .offer__button {
+  @include font-size-line(14, 18);
   display: block;
-  margin-top: 300px;
-  padding: 7px 44px;
+  margin-top: 303px;
+  padding: 10px 44px;
 
   @media (min-width: $tablet-width) {
+    @include font-size-line(20, 20);
     display: inline-block;
-    margin-top: 49px;
-    padding: 14px 26px;
+    margin: 48px 0 0 22px;
+    padding: 17px 27px;
   }
 
   @media (min-width: $desktop-width) {
