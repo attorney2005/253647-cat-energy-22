@@ -9,6 +9,14 @@
   &--green {
     background-color: $basic-green;
     color: $basic-white;
+
+    &:hover {
+      background-color: $basic-green2;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
   }
 
   &--before-after {

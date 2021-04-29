@@ -1,5 +1,6 @@
 .example {
   position: relative;
+  margin-top: 42px;
   background-color: $dark-grey2;
 
   @media (min-width: $tablet-width) {
@@ -22,7 +23,7 @@
 }
 
 .example__wrapper {
-  padding: 27px 20px 0 20px;
+  padding: 31px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 27px 30px;

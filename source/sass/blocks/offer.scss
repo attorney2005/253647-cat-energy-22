@@ -9,6 +9,10 @@
     position: relative;
     padding: 34px 90px 221px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 90px 221px;
+  }
 }
 
 .offer::before {
@@ -17,7 +21,7 @@
   top: 171px;
   left: 20px;
   width: 280px;
-  height: 270px;
+  height: 265px;
   background-image: url("../../img/offer/can.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,6 +32,13 @@
     top: 235px;
     width: 629px;
     height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 592px;
+    top: 1px;
+    width: 517px;
+    height: 468px;
   }
 }
 
@@ -84,7 +95,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 98px;
+    display: table;
+    margin-left: 99px;
   }
 }
 
@@ -102,6 +114,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 98px;
+    margin: 53px 0 0 98px;
+    padding: 16px 27px;
   }
 }

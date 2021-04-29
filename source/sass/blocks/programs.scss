@@ -1,10 +1,18 @@
 .programs {
-  margin-top: 22px;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 306px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+  }
 }
 
 .programs__wrapper {
   @include reset-list;
-  margin-top: 136px;
+  margin-top: 23px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -13,13 +21,15 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
     padding: 0 110px;
+    margin-top: 0;
   }
 }
 
 .programs__program {
   @include reset-list;
-  padding: 20px;
+  padding: 29px 20px 20px 20px;
   position: relative;
   background-color: $basic-grey;
 
@@ -27,24 +37,14 @@
     padding: 77px 62px 57px 52px;
   }
 
-  &--slim {
-    @media (min-width: $desktop-width) {
-      @include reset-list;
-      margin-right: 40px;
-    }
-  }
-
-  &--pro {
-    @media (min-width: $desktop-width) {
-      @include reset-list;
-      margin-left: 40px;
-    }
+  @media (min-width: $desktop-width) {
+    flex: 1;
   }
 
   &--slim::before {
     position: absolute;
     content: "";
-    top: 24;
+    top: 24px;
     left: 22px;
     width: 53px;
     height: 53px;
@@ -54,16 +54,16 @@
     @media (min-width: $tablet-width) {
       position: absolute;
       content: "";
-      top: 44px;
-      left: 466px;
+      top: 84px;
+      left: 447px;
       width: 200px;
       height: 200px;
       background-size: 200px 200px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 0;
-      left: 0;
+      top: 46px;
+      left: 55px;
       width: 100px;
       height: 100px;
       background-size: contain;
@@ -73,8 +73,8 @@
   &--pro::before {
     position: absolute;
     content: "";
-    left: 22px;
-    top: 24;
+    left: 13px;
+    top: 24px;
     width: 67px;
     height: 53px;
     background-image: url("../img/programs/cat-back-run.svg");
@@ -83,18 +83,18 @@
     @media (min-width: $tablet-width) {
       position: absolute;
       content: "";
-      top: 44px;
-      left: 466px;
-      width: 200px;
-      height: 200px;
-      background-size: 200px 200px;
+      top: 61px;
+      left: 419px;
+      width: 272px;
+      height: 231px;
+      background-size: 260px 265px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 0;
-      left: 0;
-      width: 100px;
-      height: 100px;
+      top: 48px;
+      left: 30px;
+      width: 135px;
+      height: 120px;
       background-size: contain;
     }
   }
@@ -103,14 +103,19 @@
 .programs__program:not(:first-of-type) {
   margin-top: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: 0;
+    margin-left: 80px;
   }
 }
 
 .programs__program-title {
   margin: 0;
-  padding-left: 81px;
+  padding-left: 71px;
 
   @include font-oswald;
   @include font-size-line(24, 37);
@@ -123,14 +128,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 0 0 0;
-    margin-left: 214px;
+    margin-left: 163px;
   }
 }
 
 .programs__program-description {
   @include font-size-line(14, 18);
-  margin: 29px 0 0 0;
+  margin: 30px 0 0 0;
   padding-bottom: 23px;
   border-bottom: 1px solid $dark-grey;
   color: $basic-black;
@@ -143,8 +147,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 73px;
-    padding: 0 52px;
+    display: table;
+    margin-top: 74px;
+    padding: 0;
   }
 }
 
@@ -153,12 +158,13 @@
   @include font-size-line(16, 16);
   position: relative;
   display: block;
-  margin-top: 15px;
+  margin-top: 19px;
   color: $basic-black;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     @include font-size-line(20, 30);
+    margin-top: 27px;
   }
 }
 
@@ -166,7 +172,7 @@
   position: absolute;
   content: "";
   top: 2px;
-  left: 92px;
+  left: 100px;
   width: 53px;
   height: 53px;
   background-image: url("../img/programs/icon-arrow.svg");
@@ -175,5 +181,10 @@
   @media (min-width: $tablet-width) {
     top: 10px;
     left: 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 10px;
+    left: 135px;
   }
 }
