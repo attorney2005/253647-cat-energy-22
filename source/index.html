@@ -84,7 +84,7 @@
         <h2 class="work-stages__title">Как это работает</h2>
         <ol class="work-stages__list">
           <li class="work-stages__item work-stages__item--icon-leaf">
-            <p class="work-stages__description">Функциональное питание поддержит только полезные питательные вещества.</p>
+            <p class="work-stages__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="work-stages__item work-stages__item--icon-tub">
             <p class="work-stages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
@@ -119,11 +119,11 @@
         </div>
       </div>
       <div class="example__wrapper-demo">
-        <div>
-          <img class="example__picture" src="img/example/before-mobile.png" width="" height="" alt="Толстый кот">
+        <div class="examle__pictures">
+          <img class="example__picture" src="img/example/before-mobile.png" width="" height="" alt="Толстый кот"hidden>
         </div>
         <div>
-          <img class="example__picture" src="img/example/after-mobile.png" width="" height="" alt="Худой кот" hidden>
+          <img class="example__picture example__picture--overlay" src="img/example/after-mobile.png" width="" height="" alt="Худой кот">
         </div>
         <div class="example__slider">
           <button class="button button--before-after example__button" type="button">Было</button>
@@ -139,8 +139,14 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__address">
-          <h2 class="contacts__address-title">Приглашаем к сотудничеству дилеров!</h2>
-          <address class="contacts__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <h2 class="contacts__address-title">
+            <span>Приглашаем</span>
+            <span>к сотудничеству дилеров!</span>
+          </h2>
+          <address class="contacts__address-text">
+            <span>ул. Большая Конюшенная, д. 19/8 </span>
+            <span>Санкт-Петербург</span>
+          </address>
         </div>
         <div class="contacts__map">
           <iframe

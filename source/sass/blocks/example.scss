@@ -1,6 +1,5 @@
 .example {
   position: relative;
-  margin-top: 42px;
   background-color: $dark-grey2;
 
   @media (min-width: $tablet-width) {
@@ -23,7 +22,7 @@
 }
 
 .example__wrapper {
-  padding: 31px 20px 0 20px;
+  padding: 27px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 27px 30px;
@@ -31,12 +30,17 @@
 }
 
 .example__wrapper-demo {
-  padding: 0 20px;
+  padding: 0 20px 7px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    height: 600px; /* Соответствует высоте картинок*/
   }
 }
 
@@ -46,6 +50,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -66,6 +74,8 @@
 }
 
 .example__result {
+  position: relative;
+  padding: 13px 0 17px 0;
   margin-top: 25px;
   width: 124px;
   text-align: center;
@@ -73,14 +83,13 @@
   border-radius: 3px;
 
   &:not(:first-of-type) {
-    margin-left: 30px;
+    margin-left: 32px;
   }
 }
 
 .example__result-value {
   @include font-oswald;
   @include font-size-line(24, 24);
-  margin-top: 17px;
   display: block;
   text-transform: uppercase;
   color: $basic-black;
@@ -88,23 +97,42 @@
 
 .example__result-subtitle {
   @include font-size-line(12, 12);
-  margin-top: 10px;
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  left: calc(50% - 44px);
+  width: 86px;
+  padding: 0 2px;
   text-align: center;
+  background-color: $dark-grey2;
+  text-transform: lowercase;
 }
-
 
 .example__cost {
   @include font-oswald;
   @include font-size-line(14, 20);
   display: block;
-  margin-top: 34px;
+  margin: 34px 0 0 0;
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
 }
 
 .example__picture {
-  margin-top: 42px;
+  margin: 44px 0 0 17px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -68px;
+    left: 105px;
+    width: 414px;
+    height: 521px;
+    overflow: hidden;
+
+    &--overlay {
+      display: block;
+    }
+  }
 }
 
 .example__slider {
@@ -117,20 +145,27 @@
 
 .example__button {
   @include font-size-line(16, 20);
-  margin: 27px 0 31px 0;
+  margin: -34px 10px 0 12px;
   align-items: center;
 }
 
 .example__scale {
   position: relative;
   display: block;
-  margin: 27px 0 31px 0;
-  width: 84px;
+  margin: -3px 0 31px 0;
+  width: 85px;
   height: 14px;
   border: 1px solid $special-light-grey3;
   box-sizing: border-box;
   border-radius: 6px;
   background-color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    width: 428px;
+    height: 6px;
+    background: #DCDCDC;
+    border-radius: 6px;
+  }
 }
 
 .example__bar {
@@ -141,4 +176,14 @@
   top: 3px;
   background-color: $basic-green;
   border-radius: 6px;
+
+  @media (min-width: $desktop-width) {
+    width: 26px;
+    height: 26px;
+    border: 1px solid red;
+    background-color: var(--red);
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 var(--default-dark-grey);
+    cursor: pointer;
+  }
 }

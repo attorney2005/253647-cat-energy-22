@@ -4,20 +4,30 @@
 
 .contacts__address {
   display: flex;
-  padding: 28px 20px;
+  justify-content: space-between;
+  padding: 29px 20px 25px 20px;
 }
 
 .contacts__address-title {
   @include font-oswald;
   @include font-size-line(16, 18);
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
   text-transform: uppercase;
   color: $special-black;
+}
+
+.contacts__address-title > span:not(:first-of-type) {
+  margin-top: 3px;
+  letter-spacing: 0.4px;
 }
 
 .contacts__address-text {
   margin: 0;
   line-height: 20px;
+  font-style: normal;
 }
 
 .contacts__map > iframe {

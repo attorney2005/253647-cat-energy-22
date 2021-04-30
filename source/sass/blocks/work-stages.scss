@@ -1,4 +1,6 @@
 .work-stages {
+  padding-bottom: 46px;
+
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-light-grey;
   }
@@ -8,7 +10,7 @@
   padding: 27px 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 30px;
+    padding: 47px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,14 +31,14 @@
 
 .work-stages__list {
   @include reset-list;
-  padding-top: 20px;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     margin-top: -8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 79px 62px;
+    gap: 74px 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +50,7 @@
 
 .work-stages__item {
   position: relative;
-  margin-top: 25px;
+  margin-top: 26px;
   list-style-type: none;
   background-position: left center;
   background-repeat: no-repeat;
@@ -102,12 +104,12 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 24);
-    margin-top: 190px;
+    margin: 174px 67px 0 0;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 197px;
+    margin: 175px 9px 0 0;
     padding: 0;
   }
 }
