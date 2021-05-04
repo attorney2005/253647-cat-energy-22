@@ -25,7 +25,7 @@
   padding: 27px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 27px 30px;
+    padding: 49px 30px;
   }
 }
 
@@ -50,6 +50,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,10 +63,19 @@
   @include font-size-line(36, 40);
   margin: 0;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-line(60, 60);
+  }
 }
 
 .example__text {
   margin: 33px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-line(16, 24);
+    margin: 66px 0 0 0;
+  }
 }
 
 .example__results {
@@ -85,6 +95,14 @@
   &:not(:first-of-type) {
     margin-left: 32px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+
+  &:not(:first-of-type) {
+    margin-left: 45px;
+  }
+  }
 }
 
 .example__result-value {
@@ -93,6 +111,10 @@
   display: block;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-line(30, 37);
+  }
 }
 
 .example__result-subtitle {
@@ -106,6 +128,12 @@
   text-align: center;
   background-color: $dark-grey2;
   text-transform: lowercase;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    bottom: -4px;
+    left: calc(50% - 53px);
+}
 }
 
 .example__cost {
@@ -116,10 +144,22 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-line(20, 20);
+    margin-left: 166px;
+  }
 }
 
 .example__picture {
   margin: 44px 0 0 17px;
+
+  @media (min-width: $tablet-width) {
+    margin: 43px 0 0 50px;
+    width: 515px;
+    height: 511px;
+  }
+
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -147,6 +187,11 @@
   @include font-size-line(16, 20);
   margin: -34px 10px 0 12px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    @include font-size-line(20, 30);
+    margin: -72px 16px 0 13px;
+  }
 }
 
 .example__scale {
@@ -159,6 +204,13 @@
   box-sizing: border-box;
   border-radius: 6px;
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    margin: -3px 0 81px 0;
+    width: 428px;
+    height: 6px;
+    background-color: $special-light-grey3;
+  }
 
   @media (min-width: $desktop-width) {
     width: 428px;
@@ -177,13 +229,22 @@
   background-color: $basic-green;
   border-radius: 6px;
 
-  @media (min-width: $desktop-width) {
-    width: 26px;
-    height: 26px;
-    border: 1px solid red;
-    background-color: var(--red);
-    border-radius: 50%;
-    box-shadow: 0 2px 1px 0 var(--default-dark-grey);
-    cursor: pointer;
+  @media (min-width: $tablet-width) {
+  display: none;
   }
+}
+
+.example__toggle {
+  position: absolute;
+  position: absolute;
+  top: -13px;
+  left: 197px;
+  width: 34px;
+  height: 34px;
+  padding: 2px;
+  border: 13px solid $basic-white;
+  background-color:$basic-green;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 $special-light-grey3;
+  cursor: pointer;
 }
