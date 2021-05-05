@@ -48,6 +48,7 @@
 
 .header__logo-link,
 .header__name-link {
+
   &:hover {
     opacity: 80%;
   }
@@ -80,8 +81,6 @@
 
 .header__nav {
   display: block;
-  margin: 0;
-  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -89,16 +88,8 @@
   }
 }
 
-.header__nav-wrapper {
-  border-top: 1px solid $special-light-grey;
-  border-bottom: 1px solid $special-light-grey;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
-}
-
 .header__toggle {
+  padding: 0;
   width: 74px;
   height: 66px;
   background-image: url("../img/heder/toggle-cross.svg");
@@ -112,10 +103,13 @@
 
 .header__nav-list {
   @include reset-list;
+  border-top: 1px solid $special-light-grey;
+  border-bottom: 1px solid $special-light-grey;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    border: none;
   }
 }
 
@@ -159,14 +153,6 @@
   text-transform: uppercase;
   color: $basic-black;
 
-  &:hover {
-    opacity: 60%;
-  }
-
-  &:active {
-    opacity: 30%;
-  }
-
   @media (min-width: $tablet-width) {
     @include font-size-line(18, 24);
     font-weight: 400;
@@ -174,6 +160,13 @@
 
   @media (min-width: $desktop-width) {
     @include font-size-line(20, 30);
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
   }
 }
 

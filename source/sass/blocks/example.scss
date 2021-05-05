@@ -3,6 +3,7 @@
   background-color: $dark-grey2;
 
   @media (min-width: $tablet-width) {
+    background-color: #ffffff;
     &::before {
       position: absolute;
       content: "";
@@ -10,7 +11,7 @@
       left: 0;
       height: 462px;
       width: 100%;
-      background-color: red;
+      background-color: $dark-grey2;
       z-index: -1;
     }
   }
@@ -25,7 +26,7 @@
   padding: 27px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 49px 30px;
+    padding: 97px 30px;
   }
 }
 
@@ -155,7 +156,7 @@
   margin: 44px 0 0 17px;
 
   @media (min-width: $tablet-width) {
-    margin: 43px 0 0 50px;
+    margin: -10px 0 0 50px;
     width: 515px;
     height: 511px;
   }

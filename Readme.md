@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Вадим Байбуз](https://up.htmlacademy.ru/adaptive/22/user/253647).
-* Наставник: [Алексей Корякин](https://htmlacademy.ru/profile/alexeycorr).
+* Наставник: [Анастасия Ничипорчук](https://htmlacademy.ru/profile/id612797).
 
 ---
 

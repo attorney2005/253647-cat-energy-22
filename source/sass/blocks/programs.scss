@@ -1,6 +1,4 @@
 .programs {
-  margin-top: 23px;
-
   @media (min-width: $tablet-width) {
     margin-top: 306px;
   }
@@ -12,7 +10,6 @@
 
 .programs__wrapper {
   @include reset-list;
-  margin-top: 23px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -163,6 +160,14 @@
   margin-top: 19px;
   color: $basic-black;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 
   @media (min-width: $tablet-width) {
     @include font-size-line(20, 30);
