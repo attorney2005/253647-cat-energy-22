@@ -49,12 +49,14 @@
 .header__logo-link,
 .header__name-link {
 
-  &:hover {
-    opacity: 80%;
-  }
-
   &:active {
     opacity: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      opacity: 80%;
+    }
   }
 }
 
@@ -153,6 +155,10 @@
   text-transform: uppercase;
   color: $basic-black;
 
+  &:active {
+    opacity: 30%;
+  }
+
   @media (min-width: $tablet-width) {
     @include font-size-line(18, 24);
     font-weight: 400;
@@ -160,12 +166,9 @@
 
   @media (min-width: $desktop-width) {
     @include font-size-line(20, 30);
+
     &:hover {
       opacity: 60%;
-    }
-
-    &:active {
-      opacity: 30%;
     }
   }
 }
