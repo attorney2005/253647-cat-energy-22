@@ -48,7 +48,6 @@
 
 .header__logo-link,
 .header__name-link {
-
   &:active {
     opacity: 60%;
   }
@@ -94,7 +93,7 @@
   padding: 0;
   width: 74px;
   height: 66px;
-  background-image: url("../img/heder/toggle-cross.svg");
+  background-image: url("../img/header/toggle-cross.svg");
   background-repeat: no-repeat;
   background-position: 33px 21px;
 
@@ -126,6 +125,7 @@
 }
 
 .header__nav-item:last-of-type {
+  padding: 23px 0 23px 0;
   @media (min-width: $tablet-width) {
     margin-left: 37px;
   }
@@ -154,7 +154,6 @@
   display: block;
   text-transform: uppercase;
   color: $basic-black;
-
   &:active {
     opacity: 30%;
   }
@@ -166,7 +165,6 @@
 
   @media (min-width: $desktop-width) {
     @include font-size-line(20, 30);
-
     &:hover {
       opacity: 60%;
     }
