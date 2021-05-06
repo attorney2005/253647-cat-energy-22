@@ -48,7 +48,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 304px;
+  height: 302px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/offer/cat-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,7 +82,7 @@
 .offer__subtitle {
   @include font-oswald;
   @include font-size-line(14, 14);
-  margin: 25px 0 0 0;
+  margin: 23px 0 0 0;
   text-align: center;
   color: $basic-white;
   text-transform: uppercase;
