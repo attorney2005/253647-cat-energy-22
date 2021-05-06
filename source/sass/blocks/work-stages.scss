@@ -1,5 +1,4 @@
 .work-stages {
-
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-light-grey;
   }
@@ -10,7 +9,7 @@
 }
 
 .work-stages__wrapper {
-  padding: 27px 20px 46px 20px;
+  padding: 27px 20px 41px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 47px 30px 100px 30px;
@@ -34,14 +33,14 @@
 
 .work-stages__list {
   @include reset-list;
-  margin: 42px 0 0 0;
+  margin: 39px 0 0 0;
 
   @media (min-width: $tablet-width) {
-    margin: 11px 0 0 0;
+    margin: 15px 0 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 70px 52px;
+    gap: 76px 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,23 +52,24 @@
 
 .work-stages__item {
   position: relative;
-  margin-top: 26px;
+  min-height: 60px;
+  margin-top: 20px;
 
   &:first-of-type {
     margin-top: 0;
   }
 
   background-size: 60px 60px;
-  background-position: left center;
+  background-position: left top;
   background-repeat: no-repeat;
 
-    @media (min-width: $tablet-width) {
-      margin: 0;
-      background-size: 80px 80px;
-      background-position: left 56px;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    background-size: 80px 80px;
+    background-position: left 56px;
+  }
 
-  &--icon-leaf{
+  &--icon-leaf {
     background-image: url("../img/work-stages/icon-leaf.svg");
   }
 
@@ -85,82 +85,65 @@
     background-image: url("../img/work-stages/icon-alarm.svg");
   }
 
+  &::after {
+    @include font-size-line(280, 280);
+    position: absolute;
+    font-family: $basic-font;
+    color: $basic-grey;
+    z-index: -1;
+   }
+
+
   &:nth-child(1) {
-
     @media (min-width: $tablet-width) {
-
       &::after {
        content: "1";
-       position: absolute;
        top: 21px;
        left: 113px;
-       font-family: $basic-font;
-        @include font-size-line(280, 280);
-        color:$basic-grey;
-        z-index: -1;
       }
     }
   }
 
   &:nth-child(2) {
-
     @media (min-width: $tablet-width) {
-
       &::after {
        content: "2";
-       position: absolute;
        top: 21px;
        left: 113px;
-       font-family: $basic-font;
-        @include font-size-line(280, 280);
-        color:$basic-grey;
-        z-index: -1;
       }
     }
   }
 
   &:nth-child(3) {
-
     @media (min-width: $tablet-width) {
-
       &::after {
        content: "3";
-       position: absolute;
        top: 21px;
        left: 113px;
-       font-family: $basic-font;
-        @include font-size-line(280, 280);
-        color:$basic-grey;
-        z-index: -1;
       }
     }
   }
 
   &:nth-child(4) {
-
     @media (min-width: $tablet-width) {
-
       &::after {
        content: "4";
-       position: absolute;
        top: 21px;
        left: 113px;
        font-family: $basic-font;
-        @include font-size-line(280, 280);
-        color:$basic-grey;
-        z-index: -1;
       }
     }
   }
 }
 
 .work-stages__description {
-  margin-bottom: 0;
+  margin: 0;
+  padding-top: 2px;
   padding-left: 80px;
 
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 24);
-    margin: 174px 67px 0 0;
+    margin: 169px 67px 0 0;
     padding: 0;
   }
 
