@@ -52,8 +52,8 @@
     opacity: 60%;
   }
 
-  @media (min-width: $desktop-width) {
-    &:hover {
+  &:hover {
+    @media (min-width: $desktop-width) {
       opacity: 80%;
     }
   }
@@ -126,6 +126,7 @@
 
 .header__nav-item:last-of-type {
   padding: 23px 0 23px 0;
+
   @media (min-width: $tablet-width) {
     margin-left: 37px;
   }
@@ -154,8 +155,15 @@
   display: block;
   text-transform: uppercase;
   color: $basic-black;
+
   &:active {
     opacity: 30%;
+  }
+
+  &:hover {
+    @media (min-width: $desktop-width) {
+      opacity: 60%;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -165,9 +173,6 @@
 
   @media (min-width: $desktop-width) {
     @include font-size-line(20, 30);
-    &:hover {
-      opacity: 60%;
-    }
   }
 }
 
@@ -178,8 +183,8 @@
 }
 
 .header__nav-link--current {
-  @media (min-width: $tablet-width) {
-    &::after {
+  &::after {
+    @media (min-width: $tablet-width) {
       position: absolute;
       content: "";
       display: block;
@@ -193,8 +198,8 @@
 }
 
 .header__nav-link--current.header__nav-link--light-on-desktop {
-  @media (min-width: $desktop-width) {
-    &::after {
+  &::after {
+    @media (min-width: $desktop-width) {
       background-color: $basic-white;
     }
   }

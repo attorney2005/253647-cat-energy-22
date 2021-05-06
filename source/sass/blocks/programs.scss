@@ -81,20 +81,20 @@
       background-size: contain;
     }
   }
-}
 
-.programs__program:not(:first-of-type) {
-  margin-top: 21px;
+  &:not(:first-of-type) {
+    margin-top: 21px;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 32px;
-    padding-right: 315px;
-  }
+    @media (min-width: $tablet-width) {
+      margin-top: 32px;
+      padding-right: 315px;
+    }
 
-  @media (min-width: $desktop-width) {
-    margin-top: 0;
-    margin-left: 87px;
-    padding-right: 69px;
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      margin-left: 87px;
+      padding-right: 69px;
+    }
   }
 }
 
@@ -109,7 +109,6 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-line(36, 36);
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,8 +143,15 @@
   margin-top: 19px;
   color: $basic-black;
   text-transform: uppercase;
+
   &:active {
     opacity: 60%;
+  }
+
+  &:hover {
+    @media (min-width: $desktop-width) {
+      opacity: 80%;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -155,9 +161,6 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 28px;
-    &:hover {
-      opacity: 80%;
-    }
   }
 }
 

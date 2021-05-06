@@ -86,51 +86,53 @@
   }
 
   &::after {
-    @include font-size-line(280, 280);
-    position: absolute;
-    font-family: $basic-font;
-    color: $basic-grey;
-    z-index: -1;
-   }
+    @media (min-width: $tablet-width) {
+      @include font-size-line(280, 280);
+      position: absolute;
+      font-family: $basic-font;
+      color: $basic-grey;
+      z-index: -1;
+    }
+  }
 
 
   &:nth-child(1) {
-    @media (min-width: $tablet-width) {
-      &::after {
-       content: "1";
-       top: 21px;
-       left: 113px;
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "1";
+        top: 16px;
+        left: 120px;
       }
     }
   }
 
   &:nth-child(2) {
-    @media (min-width: $tablet-width) {
-      &::after {
-       content: "2";
-       top: 21px;
-       left: 113px;
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "2";
+        top: 15px;
+        left: 112px;
       }
     }
   }
 
   &:nth-child(3) {
-    @media (min-width: $tablet-width) {
-      &::after {
-       content: "3";
-       top: 21px;
-       left: 113px;
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "3";
+        top: 17px;
+        left: 113px;
       }
     }
   }
 
   &:nth-child(4) {
-    @media (min-width: $tablet-width) {
-      &::after {
-       content: "4";
-       top: 21px;
-       left: 113px;
-       font-family: $basic-font;
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "4";
+        top: 16px;
+        left: 113px;
+        font-family: $basic-font;
       }
     }
   }
@@ -138,8 +140,7 @@
 
 .work-stages__description {
   margin: 0;
-  padding-top: 2px;
-  padding-left: 80px;
+  padding: 2px 0 0 80px;
 
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 24);
@@ -148,7 +149,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 175px 9px 0 0;
-    padding: 0;
+    margin: 168px 9px 0 0;
   }
 }
