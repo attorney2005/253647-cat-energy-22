@@ -41,7 +41,6 @@
   margin: 0;
   line-height: 20px;
   font-style: normal;
-  text-align: end;
 
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 18);

@@ -99,9 +99,7 @@
 }
 
 .programs__program-title {
-  margin: 0;
-  margin-left: 71px;
-
+  margin: 0 0 0 71px;
   @include font-oswald;
   @include font-size-line(24, 37);
   text-transform: uppercase;
@@ -109,6 +107,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-line(36, 36);
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

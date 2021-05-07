@@ -3,16 +3,18 @@
 }
 
 .footer__wrapper {
-  padding-top: 31px;
-  padding-bottom: 22px;
+  padding: 39px 20px 22px 20px;
   border-top: 1px solid $dark-grey;
   border-bottom: 1px solid $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .page-footer__brand-picture {
-  margin-left: auto;
-  margin-right: auto;
   display: block;
+  text-align: center;
 }
 
 .footer__social-list {

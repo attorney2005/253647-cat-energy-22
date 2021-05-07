@@ -132,7 +132,6 @@
         content: "4";
         top: 16px;
         left: 113px;
-        font-family: $basic-font;
       }
     }
   }
@@ -144,11 +143,10 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 24);
-    margin: 169px 67px 0 0;
-    padding: 0;
+    padding: 169px 67px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 168px 9px 0 0;
+    padding: 168px 9px 0 0;
   }
 }
