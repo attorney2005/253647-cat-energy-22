@@ -203,7 +203,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 584px;
+  width: 196px;
+
+  @media (min-width: $tablet-width) {
+    width: 584px;
+  }
 }
 
 .example__button {
