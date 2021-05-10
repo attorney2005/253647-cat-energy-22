@@ -11,11 +11,14 @@
     color: $basic-white;
 
     &:hover {
-      background-color: $basic-green2;
+      @media (min-width: $desktop-width) {
+        background-color: $basic-green2;
+      }
     }
 
     &:active {
-      opacity: 30%;
+      background-color: $basic-green2;
+      color:rgba(255,255,255, 0.3);
     }
   }
 
