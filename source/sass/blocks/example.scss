@@ -13,6 +13,11 @@
       height: 462px;
       width: 100%;
       background-color: $dark-grey2;
+
+      @media (min-width: $desktop-width) {
+        bottom: 6px;
+        z-index: -1;
+      }
     }
   }
 
@@ -28,6 +33,10 @@
   @media (min-width: $tablet-width) {
     padding: 45px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px 109px;
+  }
 }
 
 .example__wrapper-results {
@@ -41,6 +50,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    margin-top: 44px;
   }
 }
 
@@ -61,6 +71,10 @@
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 24);
     margin: 63px 7px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 147px;
   }
 }
 
@@ -137,6 +151,11 @@
     margin: 36px 0 0 166px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: 58px 0 0 1px;
+  }
 }
 
 .example__cost-value {
@@ -145,6 +164,11 @@
   @media (min-width: $tablet-width) {
     display: block;
     margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0 0 0 62px;
   }
 }
 
@@ -182,11 +206,17 @@
       width: 341px;
       background-color: transparent;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 13px;
+      left: -46px;
+      width: 380px;
+      height: 510px;
+    }
   }
 
   &--back {
     position: relative;
-    top: 43px;
     left: 38px;
     background-image: url("../../img/example/after-mobile.png");
     background-position: center;
@@ -194,6 +224,11 @@
     @media (min-width: $tablet-width) {
       top: 44px;
       left: 255px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 171px;
     }
   }
 }
@@ -207,6 +242,10 @@
 
   @media (min-width: $tablet-width) {
     width: 584px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 32px 0 0 33px;
   }
 }
 

@@ -100,6 +100,7 @@
 
 .programs__program-title {
   margin: 0 0 0 71px;
+
   @include font-oswald;
   @include font-size-line(24, 37);
   text-transform: uppercase;
@@ -129,7 +130,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 74px 0 0 0;
+    margin: 74px -52px 0 0;
     padding: 0;
   }
 }
@@ -148,8 +149,10 @@
   }
 
   &:hover {
-    @media (min-width: $desktop-width) {
-      opacity: 80%;
+    &::before {
+      @media (min-width: $desktop-width) {
+        right: 2px;
+      }
     }
   }
 
@@ -165,21 +168,44 @@
 
 .programs__program-link::before {
   position: absolute;
+  display: block;
   content: "";
   top: 2px;
-  left: 100px;
-  width: 53px;
-  height: 53px;
-  background-image: url("../img/programs/icon-arrow.svg");
+  right: 117px;
+  width: 6px;
+  height: 12px;
+  background-image: url("../img/programs/arrow.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     top: 10px;
-    left: 133px;
+    left: 148px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 10px;
-    left: 135px;
+    top: 7px;
+    left: 153px;
+  }
+}
+
+.programs__program-link::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 7px;
+  left: 100px;
+  width: 20px;
+  height: 2px;
+  background: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    top: 15px;
+    left: 132px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 12px;
+    left: 132px;
   }
 }
