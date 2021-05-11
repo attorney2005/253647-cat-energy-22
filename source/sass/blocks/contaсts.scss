@@ -10,8 +10,16 @@
   @media (min-width: $tablet-width) {
     padding: 66px 72px;
   }
-}
 
+  @media (min-width: $desktop-width) {
+    background: $basic-white;
+    position: absolute;
+    top: 90px;
+    left: 112px;
+    width: 570px;
+    height: 207px;
+  }
+}
 .contacts__address-title {
   @include font-oswald;
   @include font-size-line(16, 18);
