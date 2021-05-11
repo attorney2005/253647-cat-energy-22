@@ -44,6 +44,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 18);
+    text-align: right;
   }
 }
 
