@@ -50,7 +50,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    margin-top: 44px;
+    margin-top: 47px;
   }
 }
 
@@ -127,13 +127,18 @@
   padding: 0 2px;
   text-align: center;
   text-transform: lowercase;
+  background-color: $dark-grey2;
 
   @media (min-width: $tablet-width) {
     @include font-size-line(14, 16);
     width: 141px;
-    bottom: -11px;
+    bottom: -8px;
     left: calc(50% - 70px);
     background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $dark-grey2;
   }
 }
 
@@ -154,7 +159,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin: 58px 0 0 1px;
+    margin: 62px 0 0 1px;
   }
 }
 
@@ -292,6 +297,15 @@
   border-radius: 6px;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    position: absolute;
+    top: -11px;
+    left: 200px;
+    width: 19px;
+    height: 19px;
+    padding: 4px;
+    border: 12px solid $basic-white;
+    background-color: $basic-green;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 $special-light-grey3;
   }
 }
