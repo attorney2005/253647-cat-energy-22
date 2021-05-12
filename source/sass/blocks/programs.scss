@@ -170,11 +170,11 @@
   position: absolute;
   display: block;
   content: "";
-  top: 2px;
-  right: 117px;
-  width: 6px;
-  height: 12px;
-  background-image: url("../img/programs/arrow.svg");
+  top: 7px;
+  left: 131px;
+  width: 32px;
+  height: 15px;
+  background-image: url("../../img/programs/icon-arrow.svg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -184,8 +184,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 7px;
-    left: 153px;
+    top: 6px;
+    left: 133px;
   }
 }
 
