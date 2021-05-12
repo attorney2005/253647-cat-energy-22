@@ -170,22 +170,24 @@
   position: absolute;
   display: block;
   content: "";
-  top: 7px;
-  left: 131px;
-  width: 32px;
-  height: 15px;
+  top: 1px;
+  left: 100px;
+  width: 34px;
+  height: 12px;
   background-image: url("../../img/programs/icon-arrow.svg");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
     top: 10px;
-    left: 148px;
+    left: 130px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 6px;
-    left: 133px;
+    top: 7px;
+    left: 131px;
+    width: 32px;
+    height: 15px;
   }
 }
 
