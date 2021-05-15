@@ -3,7 +3,7 @@
 }
 
 .footer__wrapper {
-  padding: 39px 20px 22px 20px;
+  padding: 37px 20px 22px 20px;
   border-top: 1px solid $dark-grey;
   border-bottom: 1px solid $dark-grey;
 
@@ -12,25 +12,28 @@
   }
 }
 
-.page-footer__brand-picture {
+.footer__brand-picture {
   display: block;
   text-align: center;
+  margin-left: 74px;
 }
 
 .footer__social-list {
   @include reset-list;
   display: flex;
   justify-content: space-around;
+  margin: 56px 0 0 0;
+  padding: 0 62px 0 53px;
 }
 
 .footer__social-item {
   border-top: 1px solid $dark-grey;
-  border-bottom: 1px solid $dark-grey;
 }
 
 .footer__copyright-link {
   @include font-size-line(16, 18);
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
   color: $more-dark-grey;
 }

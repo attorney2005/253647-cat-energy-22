@@ -28,7 +28,7 @@
 }
 
 .example__wrapper {
-  padding: 28px 20px 0 20px;
+  padding: 27px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 45px 30px;
@@ -241,11 +241,11 @@
 }
 
 .example__slider {
-  margin: 53px auto 0 auto;
+  margin: 75px auto 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 196px;
+  width: 206px;
 
   @media (min-width: $tablet-width) {
     width: 584px;
@@ -268,7 +268,7 @@
 .example__scale {
   position: relative;
   display: block;
-  width: 85px;
+  width: 87px;
   height: 14px;
   border: 1px solid $special-light-grey3;
   box-sizing: border-box;
@@ -293,7 +293,7 @@
   position: absolute;
   width: 35px;
   height: 6px;
-  left: 3px;
+  left: 9px;
   top: 3px;
   background-color: $basic-green;
   border-radius: 6px;
