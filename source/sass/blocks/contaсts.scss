@@ -44,10 +44,6 @@
   @media (min-width: $tablet-width) {
     margin-top: 7px;
   }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -12px;
-  }
 }
 
 .contacts__address-text {
@@ -80,4 +76,8 @@
   width: 100%;
   height: 362px;
   border: 0;
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
 }
