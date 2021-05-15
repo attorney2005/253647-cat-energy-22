@@ -58,12 +58,15 @@
   justify-content: space-between;
   margin-top: 39px;
   color: $more-dark-grey;
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
 }
+
 .footer__copyright-text {
   margin-top: 7px;
+
   @media (min-width: $tablet-width) {
     margin-right: 22px;
   }

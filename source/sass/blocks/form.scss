@@ -1,6 +1,6 @@
 .form {
   @include font-oswald;
-  padding-bottom: 20px;
+  padding: 26px 0 0 0;
 }
 
 .form__title {
@@ -27,24 +27,40 @@
 }
 
 .form__state {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 20px 0 20px 10px;
+  margin: 0;
 }
 
 .form__data {
-  margin: 10px 0 0 0;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.form__data:first-of-type {
-  margin-top: 0;
+  &:not(:first-of-type) {
+    margin-top: 13px;
+  }
 }
 
 .form__input {
   @include font-oswald;
   @include font-size-line(16, 18);
-  padding: 13px 0 13px 15px;
+  padding: 13px 28px 13px 18px;
   text-transform: uppercase;
   color: $more-dark-grey;
+
+  &--name {
+    width: 228px;
+    margin: 12px 19px 0 0;
+  }
+
+  &--weight {
+    width: 142px;
+  }
+
+  &--age {
+    width: 172px;
+    margin-right: 17px;
+  }
 }
 
 .form__input-text {

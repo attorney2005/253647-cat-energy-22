@@ -49,19 +49,19 @@
     <form class="form" action=' https://echo.htmlacademy.ru' method='POST'>
       <div class="form__wrapper">
         <h1 class="form__title">Подбор программы</h1>
-        <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <fieldset class="form__state container">
+        <p class="form__subtitle">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
+        <fieldset class="form__state">
           <label class="form__data">
             <span class="form__input-text">Имя:<sub>*</sub></span>
-            <input class="form__input" type="text" placeholder="Барсик" required>
+            <input class="form__input form__input--name" type="text" placeholder="Барсик" required>
           </label>
           <label class="form__data">
             <span class="form__input-text">Вес (кг):<sub>*</sub></span>
-            <input class="form__input" type="text" placeholder="7" required>
+            <input class="form__input form__input--weight" type="text" placeholder="7" required>
           </label>
           <label class="form__data">
             <span class="form__input-text">Возраст (лет):</span>
-            <input class="form__input" type="text" placeholder="7">
+            <input class="form__input form__input--age" type="text" placeholder="7">
           </label>
         </fieldset>
         <fieldset class="form__radio container">
@@ -78,7 +78,7 @@
             <span class="form__radio-text">Не знаю (Нужен ваш совет)</span>
           </label>
         </fieldset>
-        <fieldset class="form__owner container">
+        <fieldset class="form__owner">
           <legend class="form__title-common">Контактные данные (владельца кота)</legend>
           <label class="form__data">
             <span class="form__input-text">E-mail:<sub>*</sub></span>
@@ -93,7 +93,7 @@
           <legend class="form__title-common">Комментарий</legend>
           <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="form__additional container">
+        <fieldset class="form__additional">
           <legend class="form__title-common">Дополнительно</legend>
           <label class="form__additional-data">
             <input class="form__additional-value" type="checkbox" name="sugar" checked>
@@ -112,7 +112,7 @@
             <span class="form__check-text">Витамины</span>
           </label>
         </fieldset>
-        <div class="form__submit container">
+        <div class="form__submit">
           <button class="button  button--green form__button" type="submit" value="send">Отправить заявку</button>
           <span class="form__text-required"><sub>*</sub>&ndash; Обязательные поля</span>
         </div>
