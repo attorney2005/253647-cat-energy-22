@@ -20,6 +20,7 @@
     height: 207px;
   }
 }
+
 .contacts__address-title {
   @include font-oswald;
   @include font-size-line(16, 18);
@@ -45,8 +46,8 @@
   }
 
   @media (min-width: $desktop-width) {
-  margin-top: -12px;
-}
+    margin-top: -12px;
+  }
 }
 
 .contacts__address-text {
