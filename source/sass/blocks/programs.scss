@@ -172,6 +172,7 @@
 
 .programs__program-link:active {
   opacity: 60%;
+
   &.programs__program-link::before {
     right: 0;
     width: 32px;

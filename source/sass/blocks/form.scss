@@ -214,11 +214,10 @@
   text-transform: uppercase;
 }
 
-.form-submit {
+.form__submit {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-
 }
 
 .form__button {
@@ -231,7 +230,7 @@
   display: block;
   margin: 21px 0 0 14px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   color: $basic-black;
 }
 
