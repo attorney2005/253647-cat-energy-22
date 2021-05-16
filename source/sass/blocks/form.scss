@@ -45,27 +45,27 @@
   @include font-oswald;
   @include font-size-line(16, 18);
   padding: 13px 28px 13px 18px;
+  width: 100%;
   text-transform: uppercase;
   color: $more-dark-grey;
 
   &--name {
-    width: 228px;
-    margin: 12px 19px 0 0;
+    margin: 12px 17px 0 14px;
   }
 
   &--weight {
-    width: 142px;
+    margin: -3px 0 0 93px;
   }
 
   &--age {
-    width: 172px;
-    margin-right: 17px;
+    margin: 4px 17px 0 16px;
   }
 }
 
 .form__input-text {
   @include font-oswald;
   @include font-size-line(16, 18);
+  margin-left: 8px;
   color: $more-dark-grey;
   text-transform: uppercase;
 }
