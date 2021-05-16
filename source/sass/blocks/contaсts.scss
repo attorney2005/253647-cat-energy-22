@@ -19,6 +19,10 @@
     width: 570px;
     height: 207px;
   }
+
+    &--grey {
+      background-color: $basic-grey;
+    }
 }
 
 .contacts__address-title {
