@@ -14,6 +14,8 @@
 .form__title-common {
   @include font-size-line(24, 26);
   @include reset;
+  text-align: left;
+  padding: 26px 94px 0 0;
   color: $basic-black;
 }
 
@@ -27,11 +29,16 @@
 }
 
 .form__state {
-  padding: 20px 0 20px 10px;
-  margin: 0;
+  margin-top: 39px;
 }
 
-.form__data {
+.form__field-group {
+  padding: 0 20px 21px 20px;
+  margin: 0;
+  border-bottom: 1px solid $dark-grey;
+}
+
+.form__field {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,61 +48,91 @@
   }
 }
 
-.form__input {
+.form__field-input {
   @include font-oswald;
   @include font-size-line(16, 18);
-  padding: 13px 28px 13px 18px;
+  padding: 11px 28px 13px 13px;
+  margin-left: 15px;
   width: 100%;
   text-transform: uppercase;
   color: $more-dark-grey;
 
-  &--name {
-    margin: 12px 17px 0 14px;
+  // &--name {
+
+  // }
+
+  // &--weight {
+
+  // }
+
+  // &--age {
+
+  // }
+
+  &--email {
+    margin-left: 10px;
   }
 
-  &--weight {
-    margin: -3px 0 0 93px;
-  }
-
-  &--age {
-    margin: 4px 17px 0 16px;
+  &--phone {
+    margin-left: 7px;
   }
 }
 
-.form__input-text {
+.form__field-name {
   @include font-oswald;
   @include font-size-line(16, 18);
-  margin-left: 8px;
   color: $more-dark-grey;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.form__radio-group {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 21px 20px;
+  border-bottom: 1px solid $dark-grey;
 }
 
 .form__radio {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
-.form__radio-data {
-  margin-top: 13px;
-}
-
-.form__radio-data:first-of-type {
+.form__radio:first-of-type {
   margin-top: 0;
 }
 
-.form__radio-text {
+.form__radio-input {
+  margin: 0;
+  opacity: 0;
+}
+
+.form__radio-box {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -7px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $special-light-grey3;
+  }
+}
+
+.form__radio-label {
   @include reset;
   @include font-oswald;
   @include font-size-line(16, 18);
+  margin-left: 29px;
   text-transform: uppercase;
   color: $special-light-black;
 }
 
 .form__owner {
-  padding-bottom: 23px;
-  margin-top: 26px;
-  border: 0;
+  padding: 36px 20px 23px 20px;
+  border: none;
 }
 
 .form__textarea {
@@ -103,33 +140,55 @@
   @include font-size-line(16, 18);
   width: 100%;
   height: 150px;
-  margin-top: 38px;
+  padding: 10px 0 0 12px;
   color: $more-dark-grey;
   text-transform: uppercase;
 }
 
 .form__comment {
-  padding-bottom: 20px;
+  padding: 10px 20px 20px 20px;
+  border: none;
 }
 
 .form__additional {
   display: flex;
   flex-direction: column;
+  padding: 15px 0 41px 41px;
+  border: none;
 }
 
-.form__additional-data {
+.form__checkbox {
   @include reset;
-  margin-top: 13px;
+  margin-top: 23px;
 }
 
-.form__additional-data:first-of-type {
-  margin-top: 34px;
+.form__checkbox:first-of-type {
+  margin-top: 0;
 }
 
+.form__checkbox-input {
+  margin: 0;
+  opacity: 0;
+}
 
-.form__check-text {
+.form__checkbox-box {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -4px;
+    left: -39px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $special-light-grey3;
+  }
+}
+
+.form__checkbox-name {
   @include font-oswald;
   @include font-size-line(16, 18);
+  padding: 0 0 0 6px;
   color: $basic-black;
   text-transform: uppercase;
 }
@@ -137,7 +196,6 @@
 .form-submit {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 }
 
 .form__button {
