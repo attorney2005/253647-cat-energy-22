@@ -152,6 +152,15 @@
   position: relative;
   padding: 113px 20px 23px 20px;
   border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 43px;
+    right: 0px;
+    width: 97px;
+    border: 2px solid #68B738;
+  }
 }
 
 .form__textarea {
@@ -168,6 +177,15 @@
   position: relative;
   padding: 63px 20px 20px 20px;
   border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 17px;
+    right: 0px;
+    width: 156px;
+    border: 2px solid #68B738;
+  }
 }
 
 .form__additional {
@@ -176,6 +194,15 @@
   flex-direction: column;
   padding: 67px 0 41px 41px;
   border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 17px;
+    right: -22px;
+    width: 156px;
+    border: 2px solid #68B738;
+  }
 }
 
 .form__checkbox {
