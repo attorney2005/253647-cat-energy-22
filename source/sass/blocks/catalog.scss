@@ -143,6 +143,9 @@
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 20);
   }
+  @media (min-width: $desktop-width) {
+  margin-top: 21px;
+  }
 }
 
 .catalog__additional-value {
@@ -150,6 +153,10 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 20);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 21px;
   }
 }
 
@@ -189,6 +196,6 @@
 .catalog__additional-button {
   @include font-size-line(16, 20);
   display: block;
-  margin: 15px 0 0 0;
+  margin: 15px 0 15px 0;
   padding: 10px 109px;
 }
