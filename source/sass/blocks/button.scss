@@ -24,6 +24,12 @@
 
   &--before-after {
     color: $basic-black;
+
+    &:hover {
+      @media (min-width: $desktop-width) {
+        border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+      }
+    }
   }
 
   &--grey {
