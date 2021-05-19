@@ -37,7 +37,7 @@
   display: block;
 }
 
-.catalog__card-body{
+.catalog__card-body {
   display: flex;
 }
 
@@ -102,7 +102,7 @@
 }
 
 .catalog__additional {
-  @include reset-list
+  @include reset-list;
 
   @media (min-width: $desktop-width) {
     display: flex;
