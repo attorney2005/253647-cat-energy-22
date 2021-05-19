@@ -361,7 +361,7 @@
 }
 
 .form__radio-input:checked + .form__radio-box {
-  &:after {
+  &::before {
     position: absolute;
     content: "";
     top: 0;
