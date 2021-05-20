@@ -217,6 +217,7 @@
 }
 
 .form__field {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -299,6 +300,12 @@
   }
 }
 
+.form__field-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 //RADIO-BUTTONS
 .form__radio-group {
   display: flex;
@@ -360,7 +367,7 @@
 }
 
 .form__radio-input:checked + .form__radio-box {
-  &::before {
+  &::after {
     position: absolute;
     content: "";
     top: 0;
