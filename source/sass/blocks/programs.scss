@@ -99,10 +99,9 @@
 }
 
 .programs__program-title {
-  margin: 0 0 0 71px;
-
   @include font-oswald;
   @include font-size-line(24, 37);
+  margin: 0 0 0 71px;
   text-transform: uppercase;
   color: $basic-black;
 
