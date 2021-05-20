@@ -111,7 +111,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 66px;
-    padding: 0 67px 53px 71px;
+    padding: 0 67px 44px 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -315,11 +315,12 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid $dark-grey;
+    padding-bottom: 24px;
   }
 }
 
 .form__radio {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 
 .form__radio:first-of-type {
@@ -337,7 +338,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: -10px;
+    top: -15px;
     left: -17px;
     width: 30px;
     height: 30px;
@@ -391,6 +392,13 @@
     height: 14px;
     border-radius: 50%;
     background: $basic-green2;
+
+    @media (min-width: $tablet-width) {
+      top: -4px;
+      left: 1px;
+      width: 17px;
+      height: 17px;
+    }
   }
 }
 
