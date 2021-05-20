@@ -17,13 +17,13 @@
     <div class="header__wrapper">
       <a class="header__logo-link">
         <picture class="header__logo">
-          <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg" width="202" height="59" alt="Кэт энерджи">
-          <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg" width="174" height="52" alt="Кэт энерджи">
+          <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
           <img src="img/header/logo-mobile.svg" width="34" height="38" alt="Кэт энерджи">
         </picture>
       </a>
       <a class="header__name-link">
-        <svg class="header__name width="101" height="18">
+        <svg class="header__name" width="101" height="18">
           <use xlink:href="img/sprite.svg#logo-mobile-text"></use>
         </svg>
       </a>
@@ -58,11 +58,11 @@
       <div class="form__state">
         <div class="form__field-group">
           <label class="form__field">
-            <span class="form__field-name">Имя:<sub>*</sub></span>
+            <span class="form__field-name">Имя:*</span>
             <input class="form__field-input form__field-input--name" type="text" placeholder="Барсик" required>
           </label>
           <label class="form__field">
-            <span class="form__field-name">Вес (кг):<sub>*</sub></span>
+            <span class="form__field-name">Вес (кг):*</span>
             <input class="form__field-input form__field-input--weight" type="text" placeholder="7" required>
           </label>
           <label class="form__field">
@@ -93,14 +93,14 @@
         <label class="form__field">
           <span class="form__field-name">E-mail:*</span>
           <input class="form__field-input form__field-input--email" type="email" placeholder="kuklachev@gmail.com" required>
-          <svg width="16" height="16">
+          <svg class="form__field-icon" width="16" height="16">
             <use xlink:href="img/sprite.svg#icon-email"></use>
           </svg>
         </label>
         <label class="form__field">
           <span class="form__field-name">Телефон:*</span>
           <input class="form__field-input form__field-input--phone" type="tel" placeholder="8(960)900-60-90" required >
-          <svg width="16" height="16">
+          <svg class="form__field-icon" width="16" height="16">
             <use xlink:href="img/sprite.svg#phone"></use>
           </svg>
         </label>
@@ -134,7 +134,7 @@
       </fieldset>
       <div class="form__submit">
         <button class="button  button--green form__button" type="submit" value="send">Отправить заявку</button>
-        <span class="form__text-required"><sub>*</sub>&ndash; Обязательные поля</span>
+        <span class="form__text-required">*&ndash; Обязательные поля</span>
       </div>
     </form>
     <section class="contacts">
