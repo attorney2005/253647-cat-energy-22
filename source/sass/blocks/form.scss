@@ -479,6 +479,13 @@
   }
 }
 
+.form__checkbox-input:disabled + .form__checkbox-box {
+  &::before,
+  &::after {
+    opacity: 30%;
+  }
+}
+
 //SUBMIT SECTION
 .form__button {
   @include font-size-line(16, 18);
