@@ -57,6 +57,7 @@
   position: absolute;
   text-align: left;
   color: $basic-black;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     @include font-size-line(36, 36);
@@ -65,12 +66,14 @@
 
 .form__owner > .form__title-common {
   top: 26px;
-  left: 18px;
-  max-width: 181px;
+  left: 0;
+  padding-left: 20px;
+  max-width: 221px;
 
   @media (min-width: $tablet-width) {
     max-width: 512px;
     left: 69px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,11 +82,14 @@
 }
 
 .form__comment > .form__title-common {
-  top: 0;
-  left: 18px;
+    top: 0;
+    left: 0;
+    min-width: 162px;
+    padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     left: 69px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,11 +98,14 @@
 }
 
 .form__additional > .form__title-common {
-  top: 1px;
-  left: 18px;
+    top: 1px;
+    left: 0;
+    min-width: 184px;
+    padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     left: 70px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,6 +130,25 @@
     padding: 0 106px 43px 109px;
   }
 }
+
+.form__owner,
+.form__comment,
+.form__additional {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 42px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      top: 47px;
+    }
+  }
+}
+
 
 .form__owner {
   position: relative;
@@ -152,6 +180,14 @@
   padding: 63px 20px 20px 20px;
   border: none;
 
+  &::before {
+    top: 17px;
+
+    @media (min-width: $tablet-width) {
+     top: 23px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 113px 67px 59px 70px;
   }
@@ -168,6 +204,14 @@
   margin: 0;
   padding: 67px 0 39px 41px;
   border: none;
+
+  &::before {
+    top: 17px;
+
+    @media (min-width: $tablet-width) {
+      top: 24px;
+     }
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
