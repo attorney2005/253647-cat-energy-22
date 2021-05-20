@@ -24,14 +24,14 @@
         right: 0;
         width: 50%;
         height: 696px;
-        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/offer/background-desktop1x.png");
+        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/offer/background-desktop1x.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;
         z-index: -1;
 
         @media (min-resolution: 2dppx) {
-          background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/offer/background-desktop2x.png");
+          background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/offer/background-desktop2x.png");
         }
       }
     }

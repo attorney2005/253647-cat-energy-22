@@ -205,12 +205,12 @@
     position: absolute;
     top: 42px;
     left: 0;
-    background-image: url("../../img/example/front-cat-mobile1x.png");
+    background-image: url("../img/example/front-cat-mobile1x.png");
     background-color: $dark-grey2;
     background-position: left;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/example/front-cat-mobile2x.png");
+      background-image: url("../img/example/front-cat-mobile2x.png");
     }
 
     @media (min-width: $tablet-width) {
@@ -219,10 +219,10 @@
       width: 340px;
       height: 503px;
       background-color: transparent;
-      background-image: url("../../img/example/front-cat-tablet1x.png");
+      background-image: url("../img/example/front-cat-tablet1x.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/example/front-cat-tablet2x.png");
+        background-image: url("../img/example/front-cat-tablet2x.png");
       }
     }
 
@@ -238,20 +238,20 @@
     position: relative;
     top: 42px;
     left: 38px;
-    background-image: url("../../img/example/back-cat-mobile1x.png");
+    background-image: url("../img/example/back-cat-mobile1x.png");
     background-position: center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/example/back-cat-mobile2x.png");
+      background-image: url("../img/example/back-cat-mobile2x.png");
     }
 
     @media (min-width: $tablet-width) {
       top: 44px;
       left: 255px;
-      background-image: url("../../img/example/back-cat-tablet1x.png");
+      background-image: url("../img/example/back-cat-tablet1x.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/example/back-cat-tablet2x.png");
+        background-image: url("../img/example/back-cat-tablet2x.png");
       }
     }
 
