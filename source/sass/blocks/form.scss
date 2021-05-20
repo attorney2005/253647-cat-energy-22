@@ -203,7 +203,7 @@
 
 //FIELDS
 .form__field-group {
-  padding: 0 20px 21px 20px;
+  padding: 0 20px 23px 20px;
   border-bottom: 1px solid $dark-grey;
 
   @media (min-width: $tablet-width) {
@@ -223,7 +223,7 @@
   align-items: center;
 
   &:not(:first-of-type) {
-    margin-top: 13px;
+    margin-top: 15px;
 
     @media (min-width: $tablet-width) {
       margin-top: 18px;
@@ -366,7 +366,7 @@
   }
 }
 
-.form__radio-input:hover + .form__radio-box{
+.form__radio-input:hover + .form__radio-box {
   &::before {
     @media (min-width: $desktop-width) {
       border-color: #bababa;
@@ -374,7 +374,7 @@
   }
 }
 
-.form__radio-input:disabled + .form__radio-box{
+.form__radio-input:disabled + .form__radio-box {
   &::before,
   &::after {
     opacity: 30%;
@@ -385,8 +385,8 @@
   &::after {
     position: absolute;
     content: "";
-    top: 0;
-    left: -10px;
+    top: -3px;
+    left: -9px;
     width: 14px;
     height: 14px;
     border-radius: 50%;
