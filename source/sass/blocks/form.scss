@@ -366,6 +366,21 @@
   }
 }
 
+.form__radio-input:hover + .form__radio-box{
+  &::before {
+    @media (min-width: $desktop-width) {
+      border-color: #bababa;
+    }
+  }
+}
+
+.form__radio-input:disabled + .form__radio-box{
+  &::before,
+  &::after {
+    opacity: 30%;
+  }
+}
+
 .form__radio-input:checked + .form__radio-box {
   &::after {
     position: absolute;
