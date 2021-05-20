@@ -82,10 +82,10 @@
 }
 
 .form__comment > .form__title-common {
-    top: 0;
-    left: 0;
-    min-width: 162px;
-    padding-left: 20px;
+  top: 0;
+  left: 0;
+  min-width: 162px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     left: 69px;
@@ -98,10 +98,10 @@
 }
 
 .form__additional > .form__title-common {
-    top: 1px;
-    left: 0;
-    min-width: 184px;
-    padding-left: 20px;
+  top: 1px;
+  left: 0;
+  min-width: 184px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     left: 70px;
@@ -184,7 +184,7 @@
     top: 17px;
 
     @media (min-width: $tablet-width) {
-     top: 23px;
+      top: 23px;
     }
   }
 
@@ -210,7 +210,7 @@
 
     @media (min-width: $tablet-width) {
       top: 24px;
-     }
+    }
   }
 
   @media (min-width: $tablet-width) {

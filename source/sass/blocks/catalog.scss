@@ -1,6 +1,6 @@
 // CATALOG
 .catalog {
-  padding: 0 20px;
+  padding-bottom: 35px;
 }
 
 .catalog__title {
@@ -8,9 +8,16 @@
   @include font-size-line(36, 36);
   margin: 0;
   color: $basic-black;
+  padding: 28px 20px 40px 20px;
 
   @media (min-width: $tablet-width) {
     @include font-size-line(60, 60);
+    padding: 34px 30px 30px 30px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width){
+    padding: 20px 110px 41px 110px;
   }
 }
 
@@ -35,6 +42,7 @@
 // ADDITIONAL LIST
 .catalog__card {
   display: block;
+  padding: 20px 20px 25px 20px;
 }
 
 .catalog__card-body {
@@ -48,7 +56,10 @@
 .catalog__card-title {
   @include font-oswald;
   @include font-size-line(16, 20);
+  margin: 0;
   color: $special-light-black;
+  width: 100px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     @include font-size-line(20, 22);
@@ -67,7 +78,7 @@
 .catalog__card-button {
   @include font-size-line(16, 20);
   display: block;
-  margin: 21px 0 0 0;
+  margin: 8px 0 0 0;
   padding: 10px 94px;
 }
 
@@ -82,7 +93,7 @@
 }
 
 .catalog__attribute-name {
-  margin: 3px 67px 0 0;
+  margin: -2px 0 0 0;
 
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 16);
@@ -90,7 +101,7 @@
 }
 
 .catalog__attribute-value {
-  margin: 3px 0 0 0;
+  margin: -2px 0 0 62px;
 
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 16);
