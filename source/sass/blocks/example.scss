@@ -70,7 +70,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 24);
-    margin: 63px 7px 0 0;
+    margin: 64px 7px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -179,10 +179,10 @@
 
 .example__wrapper-demo {
   position: relative;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 70px;
+    padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -194,8 +194,7 @@
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 311px;
-  height: 232px;
+  height: 257px;
 
   @media (min-width: $tablet-width) {
     height: 520px;
@@ -203,8 +202,9 @@
 
   &--front {
     position: absolute;
-    top: 42px;
+    top: 31px;
     left: 0;
+    width: 320px;
     background-image: url("../img/example/front-cat-mobile1x.png");
     background-color: $dark-grey2;
     background-position: left;
@@ -238,6 +238,7 @@
     position: relative;
     top: 42px;
     left: 38px;
+    width: 0;
     background-image: url("../img/example/back-cat-mobile1x.png");
     background-position: center;
 
@@ -263,7 +264,7 @@
 }
 
 .example__slider {
-  margin: 75px auto 0 auto;
+  margin: 49px auto 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

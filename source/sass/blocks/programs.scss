@@ -15,7 +15,7 @@
 
 .programs__program {
   @include reset-list;
-  padding: 30px 20px 20px 20px;
+  padding: 30px 20px 19px 20px;
   position: relative;
   background-color: $basic-grey;
 
@@ -83,7 +83,7 @@
   }
 
   &:not(:first-of-type) {
-    margin-top: 19px;
+    margin-top: 20px;
 
     @media (min-width: $tablet-width) {
       margin-top: 32px;

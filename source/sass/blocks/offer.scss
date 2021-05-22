@@ -4,7 +4,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: 171px;
+    top: 167px;
     left: 20px;
     width: 280px;
     height: 265px;
@@ -18,10 +18,10 @@
     }
 
     @media (min-width: $tablet-width) {
-      left: 109px;
-      top: 235px;
-      width: 629px;
-      height: 509px;
+      left: 28px;
+      top: 234px;
+      width: 709px;
+      height: 609px;
       background-image: url("../img/offer/index-can-tablet1x.png");
 
       @media (min-resolution: 2dppx) {
@@ -32,8 +32,8 @@
     @media (min-width: $desktop-width) {
       left: 592px;
       top: 1px;
-      width: 517px;
-      height: 468px;
+      width: 552px;
+      height: 499px;
       background-image: url("../img/offer/index-can-desctop1x.png");
 
       @media (min-resolution: 2dppx) {

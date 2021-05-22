@@ -5,10 +5,10 @@
 .contacts__address {
   display: flex;
   justify-content: space-between;
-  padding: 28px 20px 25px 20px;
+  padding: 28px 20px 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 72px;
+    padding: 66px 72px 61px 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,17 +36,16 @@
   color: $special-black;
 
   @media (min-width: $tablet-width) {
-    @include font-size-line(20, 21);
+    @include font-size-line(20, 22);
     padding: 0 55px 0 0;
   }
 }
 
 .contacts__address-title > span:not(:first-of-type) {
   margin-top: 3px;
-  letter-spacing: 0.4px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 7px;
+    margin-top: 5px;
   }
 }
 
