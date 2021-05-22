@@ -86,11 +86,16 @@
     @include font-size-line(20, 22);
     width: 148px;
   }
+
+  &--moregoods {
+    width: 220px;
+    margin: 59px 0 0 39px;
+  }
 }
 
 .catalog__card-subtitle {
   @include font-size-line(12, 16);
-  margin-top: 8px;
+  margin: 8px 0 0 29px;
 
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 18);
@@ -102,6 +107,10 @@
   display: block;
   margin: 8px 0 0 0;
   padding: 10px 94px;
+
+  &--moregoods {
+    margin-top: 20px;
+  }
 }
 
 .catalog__attribute-list {
