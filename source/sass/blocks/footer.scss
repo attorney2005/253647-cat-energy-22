@@ -4,11 +4,21 @@
 
 .footer__wrapper {
   padding: 39px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 97px 31px 52px 29px;
+  }
 }
 
 .footer__brand-link {
   display: block;
   padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .footer__brand-picture {
@@ -34,6 +44,11 @@
   padding: 20px 69px 17px 73px;
   border-top: 1px solid $dark-grey;
   border-bottom: 1px solid $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .footer__social-item,
@@ -55,6 +70,23 @@
   &--fb use {
     fill: none;
     stroke: #666666;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 32px;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 28px;
+      height: 33px;
+    }
   }
 }
 
@@ -94,6 +126,10 @@
   display: flex;
   justify-content: space-between;
   color: $more-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .footer__copyright-text {
@@ -102,6 +138,10 @@
 
   &:active {
     opacity: 30%;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 

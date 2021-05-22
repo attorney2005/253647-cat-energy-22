@@ -214,9 +214,9 @@
     }
 
     @media (min-width: $tablet-width) {
-      top: 58px;
-      left: 41px;
-      width: 340px;
+      top: 48px;
+      left: 6px;
+      width: 377px;
       height: 503px;
       background-color: transparent;
       background-image: url("../img/example/front-cat-tablet1x.png");
@@ -248,7 +248,9 @@
 
     @media (min-width: $tablet-width) {
       top: 44px;
-      left: 255px;
+      left: auto;
+      right: calc(50% - 384px);
+      width: 50%;
       background-image: url("../img/example/back-cat-tablet1x.png");
 
       @media (min-resolution: 2dppx) {
