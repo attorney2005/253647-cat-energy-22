@@ -1,6 +1,6 @@
 // CATALOG
 .catalog {
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 }
 
 .catalog__title {
@@ -88,10 +88,33 @@
   }
 
   &--moregoods {
+    position: relative;
     width: 220px;
     margin: 59px 0 0 39px;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -40px;
+    left: 87px;
+    width: 28px;
+    height: 2px;
+    background-color: $special-lightest-grey2;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -40px;
+    left: 87px;
+    width: 28px;
+    height: 2px;
+    background-color: $special-lightest-grey2;
+    transform: rotate(90deg);
+  }
 }
+
 
 .catalog__card-subtitle {
   @include font-size-line(12, 16);
@@ -146,6 +169,7 @@
 
 .catalog__additional {
   @include reset-list;
+  padding: 0 20px;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -156,6 +180,7 @@
 .catalog__additional-title {
   @include font-oswald;
   @include font-size-line(24, 24);
+  margin: 0;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
@@ -163,7 +188,15 @@
   }
 }
 
+.catalog__additional-list {
+  padding: 0;
+  margin-top: 14px;
+  list-style: none;
+}
+
 .catalog__additional-card {
+  padding: 33px 0 0 0;
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -173,6 +206,7 @@
 .catalog__additional-name {
   @include font-oswald;
   @include font-size-line(16, 16);
+  margin: 0;
   color: $special-light-black;
   text-transform: uppercase;
 
@@ -182,14 +216,14 @@
 }
 
 .catalog-additional-attributes {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 0 0 -20px;
 }
 
 .catalog__additional-key {
   @include font-size-line(14, 14);
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     @include font-size-line(16, 20);
@@ -260,6 +294,6 @@
 .catalog__additional-button {
   @include font-size-line(16, 20);
   display: block;
-  margin: 15px 0 15px 0;
+  margin: 13px 0 0 0;
   padding: 10px 109px;
 }

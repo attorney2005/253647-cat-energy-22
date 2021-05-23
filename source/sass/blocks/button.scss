@@ -35,5 +35,15 @@
   &--grey {
     background-color: $basic-grey;
     color: $more-dark-grey;
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
+
+    &:hover {
+      @media (min-width: $desktop-width) {
+        background-color: $special-light-grey;
+      }
+    }
   }
 }
